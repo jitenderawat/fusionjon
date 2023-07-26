@@ -396,7 +396,7 @@
 
                     <div class="col-lg-8">
                         <div class="contact-form">
-                            <form id="contactForm">
+                            <form id="contactForm" method="POST">
                                 <div class="row">
                                     <div class="col-lg-6">
                                         <div class="form-group">
