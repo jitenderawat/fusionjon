@@ -38,7 +38,7 @@ Route::get('/terms-condition', [TermController::class, 'index'])->name('terms');
 Route::get('/privacy', [PrivacyController::class, 'index'])->name('privacy');
 
 Route::get('/contact', [ContactController::class, 'index'])->name('contact');
-Route::post('/contacts', [ContactController::class, 'show_data'])->name('contact_data');
+Route::post('/contact', [ContactController::class, 'store_msg']);
 
 Route::get('/about', [AboutController::class, 'index'])->name('about');
 Route::get('/team', [TeamController::class, 'index'])->name('team');

@@ -5,6 +5,8 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+        
+        <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
        <!-- Bootstrap RTL CSS --> 
         <link rel="stylesheet" href="assets/css/bootstrap.rtl.min.css">
         <!-- Animate Min CSS -->
@@ -396,7 +398,13 @@
 
                     <div class="col-lg-8">
                         <div class="contact-form">
-                            <form id="contactForm" method="POST">
+                            @if (Session::has('success'))
+                            <div class="alert alert-success" id="success-message"  style="text-align: left">
+                                {{ Session::get('success') }}
+                            </div>
+                        @endif
+                            <form action="{{route('contact')}}"  method="POST">
+                                @csrf
                                 <div class="row">
                                     <div class="col-lg-6">
                                         <div class="form-group">
@@ -454,6 +462,7 @@
                                         <div id="msgSubmit" class="h3 text-center hidden"></div>
                                         <div class="clearfix"></div>
                                     </div>
+
                                 </div>
                             </form>
                         </div>
@@ -618,6 +627,19 @@
                 <span class="slider round"></span>
             </label>
         </div>
+
+        <script>
+            $(document).ready(function () {
+                // If the success message exists, hide it after 3 seconds
+                if ($("#success-message").length) {
+                    setTimeout(function () {
+                        $("#success-message").fadeOut('slow', function () {
+                            $(this).remove();
+                        });
+                    }, 3000);
+                }
+            });
+        </script>
         <!-- Color Switch Button End -->
 
         <!-- Jquery Min JS -->

@@ -5,7 +5,9 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Helpers\FlashMsg;
-use App\Contacts;
+use Illuminate\Support\Facades\DB;
+use App\Models\Contacts;
+use Illuminate\Support\Facades\Session;
 
 class ContactController extends Controller
 {
@@ -14,27 +16,29 @@ class ContactController extends Controller
     }
 
     
-        public function store_data(Request $request){
-            $this->validate($request,[
-                'name' => 'required|string',
-                'email' => 'required|string',
-                'subject'=>'required|string',
-                'phone'=>  'required|string',
-                'message'=>  'required',
-               
-        ]);
-          
-          
-                     Contacts::create([
+        public function store_msg(Request $request)
+        {
+        $input =    $this->validate($request, [
+                'name' => 'required',
+                'email' => 'nullable',
+                'phone_number' => 'nullable',
+                'msg_subject' => 'nullable',
+                'message' => 'required',
+            ]);
+    
+            DB::transaction(function () use ($request) {
+                Contacts::create([
                     'name'=> $request->name,
                     'email'=> $request->email,
-                    'subject'=> $request->subject,
-                    'phone'=> $request->phone,
+                    'phone'=> $request->phone_number,
+                    'subject'=> $request->msg_subject,
                     'message'=> $request->message,
-                ]);  
+                ]);
+            });
     
-                return back()->with(FlashMsg::item_new());
-                }
-                
+            Session::flash('success', '! Message submitted successfully');
+
+            return back();
         }
-          
+}
+    
