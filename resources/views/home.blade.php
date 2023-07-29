@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="ar" dir="rtl">
+<html lang="en" dir="ltr">
     <head>
         <!-- Required Meta Tags -->
         <meta charset="UTF-8">
@@ -51,14 +51,8 @@
         <!-- Top Header Start -->
         <header class="top-header top-header-bg">
             <div class="container">
-                <div class="row align-items-center">
-                    <div class="col-lg-7 col-md-6">
-                        <div class="top-head-left">
-                            <div class="top-contact">
-                                <h3>Support By : <a href="tel:+1(212)-255-5511">+1 (212) 255-5511</a></h3>
-                            </div>
-                        </div>
-                    </div>
+                <div class="row align-items-right">
+                    
 
                     <div class="col-lg-5 col-md-6">
                         <div class="top-header-right">
@@ -86,14 +80,13 @@
                                     </li>
                                 </ul>
                             </div>
-                            <div class="language-list">
-                                <select class="language-list-item">
-                                    <option>English</option>
-                                    <option>العربيّة</option>
-                                    <option>Deutsch</option>
-                                    <option>Português</option>
-                                    <option>简体中文</option>
-                                </select>	
+                         
+                        </div>
+                    </div>
+                    <div class="col-lg-7 col-md-6">
+                        <div class="top-head-left">
+                            <div class="top-contact">
+                                <h3>Support By : <a href="tel:+1(212)-255-5511">011-45696408</a></h3>
                             </div>
                         </div>
                     </div>
@@ -115,13 +108,13 @@
             <!-- Menu For Desktop Device -->
             <div class="main-nav">
                 <div class="container">
-                    <nav class="navbar navbar-expand-md navbar-light ">
-                       <a class="navbar-brand" href="">
+                    <nav class="navbar navbar-expand-md navbar-light " style="width: 104%">
+                       <a class="navbar-brand" style="margin-left: -11rem" href="">
                             <img src="assets/images/logos/image.png" class="logo-one" alt="Logo"> 
                         </a>
 
                         <div class="collapse navbar-collapse mean-menu" id="navbarSupportedContent">
-                            <ul class="navbar-nav m-auto flex-row-reverse">
+                            <ul class="navbar-nav m-auto">
                                 <li class="nav-item">
                                     <a href="{{route('home')}}" class="nav-link active">
                                         Home 
@@ -135,7 +128,7 @@
                                     </a>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="#" class="nav-link">
+                                    <a href="" class="nav-link">
                                         Pages 
                                         <i class='bx bx-caret-down'></i>
                                     </a>
@@ -158,48 +151,8 @@
                                             </a>
                                         </li>
 
-                                        <li class="nav-item">
-                                            <a href="#" class="nav-link">
-                                                Case Study 
-                                                <i class='bx bx-caret-down'></i>
-                                            </a>
-                                            <ul class="dropdown-menu">
-                                                <li class="nav-item">
-                                                    <a href="{{route('case')}}" class="nav-link">
-                                                        Case Study  
-                                                    </a>
-                                                </li>
-                                                <li class="nav-item">
-                                                    <a href="{{route('casedetails')}}" class="nav-link">
-                                                        Case Study Details 
-                                                    </a>
-                                                </li>
-                                            </ul>
-                                        </li>
-
-                                        <li class="nav-item">
-                                            <a href="#" class="nav-link">
-                                                User
-                                                <i class='bx bx-caret-down'></i>
-                                            </a>
-                                            <ul class="dropdown-menu">
-                                                <li class="nav-item">
-                                                    <a href="log-in.html" class="nav-link">
-                                                        Log In
-                                                    </a>
-                                                </li>
-                                                <li class="nav-item">
-                                                    <a href="register.html" class="nav-link">
-                                                        Registration
-                                                    </a>
-                                                </li>
-                                                <li class="nav-item">
-                                                    <a href="forget-password.html" class="nav-link">
-                                                        Forget Password
-                                                    </a>
-                                                </li>
-                                            </ul>
-                                        </li>
+                                     
+                                      
 
                                         <li class="nav-item">
                                             <a href="{{ route('terms')}}" class="nav-link">
@@ -237,23 +190,12 @@
                                     </ul>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="#" class="nav-link">
+
+                                    <a href="{{route('blog')}}" class="nav-link">
                                         Blog
-                                        <i class='bx bx-caret-down'></i>
+                                       
                                     </a>
-                                    <ul class="dropdown-menu">
-                                        <li class="nav-item">
-                                            <a href="{{route('blog')}}" class="nav-link">
-                                                Blog Style One 
-                                            </a>
-                                        </li>
-                                        
-                                        <li class="nav-item">
-                                            <a href="{{route('blogdetails')}}" class="nav-link">
-                                                Blog Details 
-                                            </a>
-                                        </li>
-                                    </ul>
+                                   
                                 </li>
 
                                 <li class="nav-item">
@@ -339,14 +281,14 @@
             <div class="container-fluid">
                 <div class="row align-items-center">
                     <div class="col-lg-6">
-                        <div class="banner-four-content" style="margin-top: 100px">
+                        <div class="banner-four-content" style="margin-top: 90px; margin-left: 85px">
                             <span>TECHNOLOGY & IT SOLUTIONS</span>
                             <h1>Bringing the Latest Technology to Your Business</h1>
                             <p>
                                 We bridge the gap between industrial companies and modern technology. Boost Productivity and Efficiency with Customized IT Services
                             </p>
                             <div class="banner-btn">
-                                <a href="contact.html" class="default-btn btn-bg-two border-radius-50 ">Get A Quote <i class='bx bx-chevron-right'></i></a>
+                                <a href="{{route('contact')}}" class="default-btn btn-bg-two border-radius-50 ">Get A Quote <i class='bx bx-chevron-right'></i></a>
                                 <a href="https://www.youtube.com/watch?v=tUP5S4YdEJo" class="play-btn popup-btn ml-20">
                                     <i class="bx bx-play"></i>
                                     <h3>Watch Video</h3>
@@ -358,7 +300,7 @@
 
                     <div class="col-lg-6 pe-0">
                         <div class="banner-four-img">
-                            <img src="assets/images/home-four/hp2.jpg" style="margin-top: 60px;" alt="Images">
+                            <img src="assets/images/home-four/hp2.jpg" style="margin-top: 100px; margin-right: 60px" alt="Images">
                         </div>
                     </div>
                 </div>
@@ -369,7 +311,7 @@
         <!-- Choose Area End -->
         <div class="choose-area-tow pt-100 pb-70">
             <div class="container">
-                <div class="row align-items-center flex-row-reverse">
+                <div class="row align-items-center">
                     <div class="col-lg-6">
                         <div class="choose-content-two">
                             <div class="section-title">
@@ -383,16 +325,16 @@
                                 <div class="col-lg-12 col-sm-6">
                                     <div class="choose-content-card">
                                         <i class="flaticon-practice"></i>
-                                        <h3>Experience Matters</h3>
-                                        <p>We've got the team to make your dreams come true! Our highly qualified employees have the expertise to bring your vision to life.</p>
+                                        <h3 style="text-align: center">Experience Matters</h3>
+                                        <p style="margin-left: 123px">We've got the team to make your dreams come true! Our highly qualified employees have the expertise to bring your vision to life.</p>
                                     </div>
                                 </div>
     
                                 <div class="col-lg-12 col-sm-6">
                                     <div class="choose-content-card">
                                         <i class="flaticon-help"></i>
-                                        <h3>Quick Support Replay</h3>
-                                        <p>Our incredible support team is here to tackle any issue you face. No problem is too big or too small for us to handle. Get ready for a solution that will leave you smiling!</p>
+                                        <h3 style="text-align: center">Quick Support Replay</h3>
+                                        <p style="margin-left: 123px">Our incredible support team is here to tackle any issue you face. No problem is too big or too small for us to handle. Get ready for a solution that will leave you smiling!</p>
                                     </div>
                                 </div>
                             </div>
@@ -416,16 +358,16 @@
                     <span class="sp-color2">Our Services</span>
                     <h2>We Provide a Wide Variety of IT Services</h2>
                 </div>
-                <div class="row pt-45 flex-row-reverse">
+                <div class="row pt-45">
                     <div class="col-lg-4 col-md-6">
                         <div class="services-item">
-                            <a href="service-details.html">
+                        <a href="{{route('servicedetails')}}">
                                 <img src="assets/images/services/it.jpg" alt="Images">
                             </a>
                             <div class="content">
                                 <i class="flaticon-consultant"></i>
-                                <span><a href="service-details.html">IT Solution</a></span>
-                                <h3><a href="service-details.html">IT Consulting</a></h3>
+                                <span><a href="{{route('servicedetails')}}">IT Solution</a></span>
+                                <h3><a href="{{route('servicedetails')}}">IT Consulting</a></h3>
                             </div>
                         </div>
                     </div>
@@ -518,14 +460,14 @@
         <!-- Work Process Area Two -->
         <section class="work-process-area-two pt-100 pb-70">
             <div class="container">
-                <div class="row align-items-center justify-content-center flex-row-reverse">
+                <div class="row align-items-center justify-content-center">
                     <div class="col-lg-7">
                         <div class="row">
                             <div class="col-lg-6 col-sm-6">
                                 <div class="work-process-card-two">
                                     <div class="number-title">02</div>
                                     <h3>Execute</h3>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam mollis tempor nunc ac sollicitudin Interdum.</p>
+                                    <p>Selecting the right team members with appropriate skills and expertise. Developing the product.</p>
                                 </div>
                             </div>
         
@@ -533,7 +475,7 @@
                                 <div class="work-process-card-two">
                                     <div class="number-title">01</div>
                                     <h3>Planning</h3>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam mollis tempor nunc ac sollicitudin Interdum.</p>
+                                    <p>Conducting a thorough analysis of the project requirements. Allocating resources and setting a timeline.</p>
                                 </div>
                             </div>
         
@@ -541,7 +483,7 @@
                                 <div class="work-process-card-two">
                                     <div class="number-title">04</div>
                                     <h3>Innovation</h3>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam mollis tempor nunc ac sollicitudin Interdum.</p>
+                                    <p>Enhancing project efficiency and effectiveness. Improving customer satisfaction. Driving competitive advantage.</p>
                                 </div>
                             </div>
         
@@ -549,7 +491,7 @@
                                 <div class="work-process-card-two">
                                     <div class="number-title">03</div>
                                     <h3>Deliver</h3>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam mollis tempor nunc ac sollicitudin Interdum.</p>
+                                    <p>Monitoring project progress and ensuring adherence to timelines. Conducting regular project meetings and status updates.</p>
                                 </div>
                             </div>
                         </div>
@@ -645,66 +587,7 @@
         </section>
         <!-- Clients Area End -->
 
-         <!-- Build Area -->
-         <div class="build-area-two pt-100 pb-70">
-            <div class="container">
-                <div class="section-title text-center">
-                    <span class="sp-color2">Case Study</span>
-                    <h2>! Let's Build Your Website</h2>
-                </div>
-
-                <div class="row pt-45">
-                    <div class="col-lg-4 col-md-6">
-                        <div class="build-item">
-                            <a href="case-details.html">
-                                <img src="assets/images/build/build-img4.jpg" alt="Images">
-                            </a>
-                            <div class="content">
-                                <h3><a href="case-details.html">Web Development</a></h3>
-                                <ul>
-                                    <li><a href="case-details.html">Design</a></li>
-                                    <li><a href="case-details.html">Development</a> </li>
-                                </ul>
-                                <a href="case-details.html" class="more-btn"><i class='bx bx-right-arrow-alt'></i></a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-4 col-md-6">
-                        <div class="build-item">
-                            <a href="case-details.html">
-                                <img src="assets/images/build/build-img5.jpg" alt="Images">
-                            </a>
-                            <div class="content">
-                                <h3><a href="case-details.html">Social Media App</a></h3>
-                                <ul>
-                                    <li><a href="case-details.html">Design</a></li>
-                                    <li><a href="case-details.html">Social</a> </li>
-                                </ul>
-                                <a href="case-details.html" class="more-btn"><i class='bx bx-right-arrow-alt'></i></a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-4 col-md-6 offset-lg-0 offset-md-3">
-                        <div class="build-item">
-                            <a href="case-details.html">
-                                <img src="assets/images/build/build-img6.jpg" alt="Images">
-                            </a>
-                            <div class="content">
-                                <h3><a href="case-details.html">UI/UX Research</a></h3>
-                                <ul>
-                                    <li><a href="case-details.html">UI/UX Design</a></li>
-                                    <li><a href="case-details.html">Research</a></li>
-                                </ul>
-                                <a href="case-details.html" class="more-btn"><i class='bx bx-right-arrow-alt'></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Build Area End -->
+<div style="height: 50px"></div>
 
         <!-- Technology Area -->
         <section class="technology-area-three pt-100 pb-70">
@@ -726,43 +609,45 @@
                         <div class="row">
                             <div class="col-lg-4 col-6 col-md-4">
                                 <div class="technology-card technology-card-color2">
-                                    <i class="flaticon-android"></i>
-                                    <h3>Android</h3>
-                                </div>
-                            </div>
-        
-                            <div class="col-lg-4 col-6 col-md-4">
-                                <div class="technology-card technology-card-color2">
                                     <i class="flaticon-website"></i>
-                                    <h3>Web</h3>
+                                    <h3>ERP</h3>
                                 </div>
                             </div>
+                            
+        
+                           
         
                             <div class="col-lg-4 col-6 col-md-4">
                                 <div class="technology-card technology-card-color2">
                                     <i class="flaticon-apple"></i>
-                                    <h3>ios</h3>
+                                    <h3>CRM</h3>
                                 </div>
                             </div>
         
                             <div class="col-lg-4 col-6 col-md-4">
                                 <div class="technology-card technology-card-color2">
                                     <i class="flaticon-television"></i>
-                                    <h3>TV</h3>
+                                    <h3>HRMS</h3>
                                 </div>
                             </div>
         
                             <div class="col-lg-4 col-6 col-md-4">
                                 <div class="technology-card technology-card-color2">
+                                    <i class="flaticon-android"></i>
+                                    <h3>Loyalty Program</h3>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-6 col-md-4">
+                                <div class="technology-card technology-card-color2">
                                     <i class="flaticon-smartwatch"></i>
-                                    <h3>Watch </h3>
+                                    <h3>Product Selector</h3>
                                 </div>
                             </div>
         
                             <div class="col-lg-4 col-6 col-md-4">
                                 <div class="technology-card technology-card-color2">
                                     <i class="flaticon-cyber-security"></i>
-                                    <h3>IoT</h3>
+                                    <h3>RFID Solution</h3>
                                 </div>
                             </div>
                         </div>
@@ -785,10 +670,10 @@
                         <div class="blog-item">
                             <div class="blog-img">
                                 <a href="blog-details.html">
-                                    <img src="assets/images/blog/blog-img7.jpg" alt="Blog Images">
+                                    <img src="assets/images/blog/blog1.jpg" alt="Blog Images">
                                 </a>
-                                <a href="{{route('servicedetails')}}" class="blog-tag">
-                                    Digital Technology
+                                <a href="{{route('blogdetails')}}" class="blog-tag">
+                                    IT Services
                                 </a>
                             </div>
                             <div class="content">
@@ -797,14 +682,14 @@
                                         11 June
                                     </li>
                                     <li>
-                                        <a href="index.html"><i class='bx bxs-user'></i> By Admin</a>
+                                        <a href=""><i class='bx bxs-user'></i> By Admin</a>
                                     </li>
                                 </ul>
                                 <h3>
-                                    <a href="blog-details.html">Product Idea Solution for New Generation</a>
+                                    <a href="{{route('blogdetails')}}">Importance of information technology in today's business landscape</a>
                                 </h3>
-                                <p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum.</p>
-                                <a href="blog-details.html" class="read-btn">Read More <i class='bx bx-chevron-right'></i></a>
+                                <p>Implementing automation and digital tools for efficient business processes, tracking inventory, sales, and customer data.</p>
+                                <a href="{{route('blogdetails')}}" class="read-btn">Read More <i class='bx bx-chevron-right'></i></a>
                             </div>
                         </div>
                     </div>
@@ -813,10 +698,10 @@
                         <div class="blog-item">
                             <div class="blog-img">
                                 <a href="blog-details.html">
-                                    <img src="assets/images/blog/blog-img8.jpg" alt="Blog Images">
+                                    <img src="assets/images/blog/digitals.jpg" alt="Blog Images">
                                 </a>
-                                <a href="service-details.html" class="blog-tag">
-                                    Artifical Intelligence
+                                <a href="{{route('blogdetails2')}}" class="blog-tag">
+                                    Digital Service
                                 </a>
                             </div>
                             <div class="content">
@@ -825,14 +710,14 @@
                                         15 June
                                     </li>
                                     <li>
-                                        <a href="index.html"><i class='bx bxs-user'></i> By Admin</a>
+                                        <a href=""><i class='bx bxs-user'></i> By Admin</a>
                                     </li>
                                 </ul>
                                 <h3>
-                                    <a href="blog-details.html">New Device Invention for Digital Platform</a>
+                                    <a href="{{route('blogdetails2')}}">Innovation in the digital platform</a>
                                 </h3>
-                                <p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum.</p>
-                                <a href="blog-details.html" class="read-btn">Read More <i class='bx bx-chevron-right'></i></a>
+                                <p>The new device addresses current challenges in digital platforms, such as lack of user-friendly devices, limited compatibility, and inefficient data transfer and storage.</p>
+                                <a href="{{route('blogdetails2')}}" class="read-btn">Read More <i class='bx bx-chevron-right'></i></a>
                             </div>
                         </div>
                     </div>
@@ -840,10 +725,10 @@
                     <div class="col-lg-4 col-md-6 offset-lg-0 offset-md-3">
                         <div class="blog-item">
                             <div class="blog-img">
-                                <a href="blog-details.html">
-                                    <img src="assets/images/blog/blog-img9.jpg" alt="Blog Images">
+                                <a href="{{route('blogdetails3')}}">
+                                    <img src="assets/images/blog/blognew.jpg" alt="Blog Images">
                                 </a>
-                                <a href="service-details.html" class="blog-tag">
+                                <a href="{{route('blogdetails3')}}" class="blog-tag">
                                     It Services
                                 </a>
                             </div>
@@ -853,14 +738,14 @@
                                         17 June
                                     </li>
                                     <li>
-                                        <a href="index.html"><i class='bx bxs-user'></i> By Admin</a>
+                                        <a href=""><i class='bx bxs-user'></i> By Admin</a>
                                     </li>
                                 </ul>
                                 <h3>
-                                    <a href="blog-details.html">Business Strategy Make His Goal Acheive </a>
+                                    <a href="{{route('blogdetails3')}}">How to improve your website SEO?</a>
                                 </h3>
-                                <p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum.</p>
-                                <a href="blog-details.html" class="read-btn">Read More <i class='bx bx-chevron-right'></i></a>
+                                <p>Keyword research is crucial for selecting the right keywords, while on-page SEO optimization involves optimizing meta tags, title tags, URLs, and content.</p>
+                                <a href="{{route('blogdetails3')}}" class="read-btn">Read More <i class='bx bx-chevron-right'></i></a>
                             </div>
                         </div>
                     </div>
@@ -869,7 +754,7 @@
         </div>
         <!-- Blog Area End -->
 
-        <!-- Footer Area End -->
+        <!-- Footer Area  -->
         <footer class="footer-area footer-bg">
             <div class="container">
                 <div class="footer-top pt-100 pb-70">
@@ -877,12 +762,10 @@
                         <div class="col-lg-4 col-sm-6">
                             <div class="footer-widget">
                                 <div class="footer-logo">
-                                    <a href="index.html">
-                                        <img src="assets/images/logos/footer-logo.png" alt="Images">
-                                    </a>
+                                    <span style="font-size: 40px; color: white"><b>FusionJon Tech</b></span>
                                 </div>
                                 <p>
-                                    Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auct.Aenean, lorem quis bibendum auct. Aenean sollicitudin lorem.
+                                    Fusionjon is  IOT/IIOT and IT solution providing company known for strong company ethics and professionalism. It has all the bases covered when it comes to providing IIoT and IT solutions of any industry. We also continuously upgrade our approach to keep your industry in an advanced state to be ready for the future.
                                 </p>
                                 <div class="footer-call-content">
                                     <h3>Talk to Our Support</h3>
@@ -945,39 +828,34 @@
                         <div class="col-lg-3 col-sm-6">
                             <div class="footer-widget pl-5">
                                 <h3>Our Blog</h3>
-                                <ul class="footer-blog">
+                                 <ul class="footer-blog">
                                     <li>
-                                        <a href="blog-details.html">
-                                            <img src="assets/images/blog/blog-img-footer.jpg" alt="Images">
-                                        </a>
+                                        
                                         <div class="content">
-                                            <h3><a href="blog-details.html">Product Idea Solution For New Generation</a></h3>
+                                            <h3><a href="{{route('blogdetails')}}">Importance of information technology in today's business landscape</a></h3>
                                             <span>04 Dec 2020</span>
                                         </div>
                                     </li>
 
                                     <li>
-                                        <a href="blog-details.html">
-                                            <img src="assets/images/blog/blog-img-footer2.jpg" alt="Images">
-                                        </a>
+                                       
                                         <div class="content">
-                                            <h3><a href="blog-details.html">New Device Invention for Digital Platform</a></h3>
+                                            <h3><a href="{{route('blogdetails2')}}">Innovation in the digital platform</a></h3>
                                             <span>07 Dec 2020</span>
                                         </div>
                                     </li>
 
                                     <li>
-                                        <a href="blog-details.html">
-                                            <img src="assets/images/blog/blog-img-footer3.jpg" alt="Images">
-                                        </a>
+                                        
                                         <div class="content">
-                                            <h3><a href="blog-details.html">Business Strategy Make His Goal Acheive</a></h3>
+                                            <h3><a href="{{route('blogdetails3')}}">How to improve your website SEO?</a></h3>
                                             <span>10 Dec 2020</span>
                                         </div>
                                     </li>
                                 </ul>
                             </div>
                         </div>
+
 
                         <div class="col-lg-3 col-sm-6">
                             <div class="footer-widget">

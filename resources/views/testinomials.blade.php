@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="ar" dir="rtl">
+<html lang="ar" dir="ltr">
     <head>
         <!-- Required Meta Tags -->
         <meta charset="UTF-8">
@@ -50,13 +50,7 @@
         <header class="top-header top-header-bg">
             <div class="container">
                 <div class="row align-items-center">
-                    <div class="col-lg-7 col-md-6">
-                        <div class="top-head-left">
-                            <div class="top-contact">
-                                <h3>Support By : <a href="tel:+1(212)-255-5511">+1 (212) 255-5511</a></h3>
-                            </div>
-                        </div>
-                    </div>
+                   
 
                     <div class="col-lg-5 col-md-6">
                         <div class="top-header-right">
@@ -84,14 +78,13 @@
                                     </li>
                                 </ul>
                             </div>
-                            <div class="language-list">
-                                <select class="language-list-item">
-                                    <option>English</option>
-                                    <option>العربيّة</option>
-                                    <option>Deutsch</option>
-                                    <option>Português</option>
-                                    <option>简体中文</option>
-                                </select>	
+                            
+                        </div>
+                    </div>
+                    <div class="col-lg-7 col-md-6">
+                        <div class="top-head-left">
+                            <div class="top-contact">
+                                <h3>Support By : <a href="tel:+1(212)-255-5511">011-45696408</a></h3>
                             </div>
                         </div>
                     </div>
@@ -112,13 +105,13 @@
             <div class="main-nav">
                 <div class="container">
                     <nav class="navbar navbar-expand-md navbar-light ">
-                       <a class="navbar-brand" href="">
+                       <a class="navbar-brand" style="margin-left: -11rem" href="">
                             <img src="assets/images/logos/image.png" class="logo-one" alt="Logo">
                             
                         </a>
 
                         <div class="collapse navbar-collapse mean-menu" id="navbarSupportedContent">
-                            <ul class="navbar-nav m-auto flex-row-reverse">
+                            <ul class="navbar-nav m-auto">
                                 <li class="nav-item">
                                     <a href="{{route('home')}}">
                                         Home 
@@ -132,7 +125,7 @@
                                     </a>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="#" class="nav-link active">
+                                    <a href="" class="nav-link active">
                                         Pages 
                                         <i class='bx bx-caret-down'></i>
                                     </a>
@@ -155,48 +148,9 @@
                                             </a>
                                         </li>
 
-                                        <li class="nav-item">
-                                            <a href="#" class="nav-link">
-                                                Case Study 
-                                                <i class='bx bx-caret-down'></i>
-                                            </a>
-                                            <ul class="dropdown-menu">
-                                                <li class="nav-item">
-                                                    <a href="{{route('case')}}" class="nav-link">
-                                                        Case Study  
-                                                    </a>
-                                                </li>
-                                                <li class="nav-item">
-                                                    <a href="{{route('casedetails')}}" class="nav-link">
-                                                        Case Study Details 
-                                                    </a>
-                                                </li>
-                                            </ul>
-                                        </li>
+                                        
 
-                                        <li class="nav-item">
-                                            <a href="#" class="nav-link">
-                                                User
-                                                <i class='bx bx-caret-down'></i>
-                                            </a>
-                                            <ul class="dropdown-menu">
-                                                <li class="nav-item">
-                                                    <a href="log-in.html" class="nav-link">
-                                                        Log In
-                                                    </a>
-                                                </li>
-                                                <li class="nav-item">
-                                                    <a href="register.html" class="nav-link">
-                                                        Registration
-                                                    </a>
-                                                </li>
-                                                <li class="nav-item">
-                                                    <a href="forget-password.html" class="nav-link">
-                                                        Forget Password
-                                                    </a>
-                                                </li>
-                                            </ul>
-                                        </li>
+                                       
 
                                         <li class="nav-item">
                                             <a href="{{route('terms')}}" class="nav-link">
@@ -214,7 +168,7 @@
                                 </li>
 
                                 <li class="nav-item">
-                                    <a href="#" class="nav-link">
+                                    <a href="" class="nav-link">
                                         Services 
                                         <i class='bx bx-caret-down'></i>
                                     </a>
@@ -234,23 +188,12 @@
                                 </li>
 
                                 <li class="nav-item">
-                                    <a href="#" class="nav-link">
+                                    
+                                    <a href="{{route('blog')}}" class="nav-link">
                                         Blog
-                                        <i class='bx bx-caret-down'></i>
+                                       
                                     </a>
-                                    <ul class="dropdown-menu">
-                                        <li class="nav-item">
-                                            <a href="{{route('blog')}}" class="nav-link">
-                                                Blog Style One 
-                                            </a>
-                                        </li>
-                                        
-                                        <li class="nav-item">
-                                            <a href="{{route('blogdetails')}}" class="nav-link">
-                                                Blog Details 
-                                            </a>
-                                        </li>
-                                    </ul>
+                                   
                                 </li>
 
                                 <li class="nav-item">
@@ -548,12 +491,10 @@
                         <div class="col-lg-4 col-sm-6">
                             <div class="footer-widget">
                                 <div class="footer-logo">
-                                    <a href="index.html">
-                                        <img src="assets/images/logos/footer-logo.png" alt="Images">
-                                    </a>
+                                    <span style="font-size: 40px; color: white"><b>FusionJon Tech</b></span>
                                 </div>
                                 <p>
-                                    Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auct.Aenean, lorem quis bibendum auct. Aenean sollicitudin lorem.
+                                    Fusionjon is  IOT/IIOT and IT solution providing company known for strong company ethics and professionalism. It has all the bases covered when it comes to providing IIoT and IT solutions of any industry. We also continuously upgrade our approach to keep your industry in an advanced state to be ready for the future.
                                 </p>
                                 <div class="footer-call-content">
                                     <h3>Talk to Our Support</h3>
@@ -618,31 +559,25 @@
                                 <h3>Our Blog</h3>
                                  <ul class="footer-blog">
                                     <li>
-                                        <a href="blog-details.html">
-                                            <img src="assets/images/blog/blog-img-footer.jpg" alt="Images">
-                                        </a>
+                                        
                                         <div class="content">
-                                            <h3><a href="blog-details.html">Product Idea Solution For New Generation</a></h3>
+                                            <h3><a href="{{route('blogdetails')}}">Importance of information technology in today's business landscape</a></h3>
                                             <span>04 Dec 2020</span>
                                         </div>
                                     </li>
 
                                     <li>
-                                        <a href="blog-details.html">
-                                            <img src="assets/images/blog/blog-img-footer2.jpg" alt="Images">
-                                        </a>
+                                       
                                         <div class="content">
-                                            <h3><a href="blog-details.html">New Device Invention for Digital Platform</a></h3>
+                                            <h3><a href="{{route('blogdetails2')}}">Innovation in the digital platform</a></h3>
                                             <span>07 Dec 2020</span>
                                         </div>
                                     </li>
 
                                     <li>
-                                        <a href="blog-details.html">
-                                            <img src="assets/images/blog/blog-img-footer3.jpg" alt="Images">
-                                        </a>
+                                        
                                         <div class="content">
-                                            <h3><a href="blog-details.html">Business Strategy Make His Goal Acheive</a></h3>
+                                            <h3><a href="{{route('blogdetails3')}}">How to improve your website SEO?</a></h3>
                                             <span>10 Dec 2020</span>
                                         </div>
                                     </li>

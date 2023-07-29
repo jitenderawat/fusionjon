@@ -16,6 +16,8 @@ use App\Http\Controllers\ServiceController;
 use App\Http\Controllers\ServicedetailController;
 use App\Http\Controllers\BlogController;
 use App\Http\Controllers\BlogdetailController;
+use App\Http\Controllers\BlogdetailsController;
+use App\Http\Controllers\BlogdetailsnewController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -51,3 +53,5 @@ Route::get('/service', [ServiceController::class, 'index'])->name('service');
 Route::get('/service-details', [ServicedetailController::class, 'index'])->name('servicedetails');
 Route::get('/blog', [BlogController::class, 'index'])->name('blog');
 Route::get('/blog-details', [BlogdetailController::class, 'index'])->name('blogdetails');
+Route::get('/blogs', [BlogdetailsController::class, 'index'])->name('blogdetails2');
+Route::get('/blog-three', [BlogdetailsnewController::class, 'index'])->name('blogdetails3');

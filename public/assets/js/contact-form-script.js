@@ -8,13 +8,11 @@
             // handle the invalid form...
             formError();
             submitMSG(false, "Did you fill up the form properly?");
-        } else {
-            // everything looks good!
-            event.preventDefault();
-            submitForm();
         }
     });
 
 
-    
-}(jQuery)); // End of use strict
+   
+}
+   
+(jQuery)); // End of use strict

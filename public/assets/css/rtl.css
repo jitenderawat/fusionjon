@@ -1,5 +1,5 @@
 body {
-  text-align: right;
+  text-align: left;
 }
 
 .ml-20 {
@@ -28,7 +28,7 @@ body {
 }
 
 .top-header-right {
-  float: left;
+  float: right;
 }
 
 .top-header-right .top-contact {
@@ -54,9 +54,7 @@ body {
   text-align: right;
 }
 
-.top-head-left {
-  float: right;
-}
+
 
 .top-header-right {
   float: left;
@@ -141,7 +139,7 @@ body {
 }
 
 .search-overlay .search-form form .input-search {
-  padding: 3px 25px 0 25px;
+  padding: 3px 25px 0 60px;
 }
 
 .search-overlay .search-form form button {
@@ -614,7 +612,7 @@ body {
 .blog-article .blog-article-share .social-icon {
   float: left;
 }
-
+.contact-form .form-group .form-control
 .blog-article .comments-wrap .comment-list li {
   padding-right: 75px;
   padding-left: 30px;
@@ -626,7 +624,7 @@ body {
 }
 
 .blog-article .comments-wrap .comment-list li a {
-  left: 0;
+  left: -30px;
   right: auto;
 }
 
@@ -682,7 +680,7 @@ body {
 }
 
 .contact-form .form-group .form-control {
-  text-align: right;
+  text-align: left;
 }
 
 .contact-form .form-group.checkbox-option p {
@@ -702,7 +700,7 @@ body {
 
 .contact-form .agree-label #chb1 {
   left: auto;
-  right: 0;
+  right: 769px;
 }
 
 .user-form .contact-form .agree-label .forget {

@@ -4,9 +4,8 @@ namespace App\Http\Controllers;
 
 
 use Illuminate\Http\Request;
-use App\Helpers\FlashMsg;
-use Illuminate\Support\Facades\DB;
-use App\Models\Contacts;
+use Illuminate\Support\Facades\Mail;
+use App\Mail\ContactMe;
 use Illuminate\Support\Facades\Session;
 
 class ContactController extends Controller
@@ -18,27 +17,29 @@ class ContactController extends Controller
     
         public function store_msg(Request $request)
         {
-        $input =    $this->validate($request, [
+
+          
+         $fileName = $request->validate([
                 'name' => 'required',
                 'email' => 'nullable',
                 'phone_number' => 'nullable',
                 'msg_subject' => 'nullable',
                 'message' => 'required',
+            ], [
+                'name.required' => 'Name is required.', 
+                // Custom error message for the "name" field
             ]);
-    
-            DB::transaction(function () use ($request) {
-                Contacts::create([
-                    'name'=> $request->name,
-                    'email'=> $request->email,
-                    'phone'=> $request->phone_number,
-                    'subject'=> $request->msg_subject,
-                    'message'=> $request->message,
-                ]);
-            });
-    
-            Session::flash('success', '! Message submitted successfully');
-
+     
+            try {
+                Mail::to('mail@fusionjon.com')->send(new ContactMe($fileName));
+                Session::flash('success', 'Message Sent Successfully!');
+            } catch (\Exception $e) {
+                // Handle the exception, log the error, display a user-friendly message, etc.
+                Session::flash('error', 'An error occurred while sending the message.');
+            }
+            
             return back();
+            
         }
 }
     

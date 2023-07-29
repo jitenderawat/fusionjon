@@ -1,11 +1,11 @@
 <!doctype html>
-<html lang="ar" dir="rtl">
+<html lang="en" dir="ltr">
     <head>
         <!-- Required Meta Tags -->
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        
+
         <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
        <!-- Bootstrap RTL CSS --> 
         <link rel="stylesheet" href="assets/css/bootstrap.rtl.min.css">
@@ -52,13 +52,7 @@
         <header class="top-header top-header-bg">
             <div class="container">
                 <div class="row align-items-center">
-                    <div class="col-lg-7 col-md-6">
-                        <div class="top-head-left">
-                            <div class="top-contact">
-                                <h3>Support By : <a href="tel:+1(212)-255-5511">+1 (212) 255-5511</a></h3>
-                            </div>
-                        </div>
-                    </div>
+                   
 
                     <div class="col-lg-5 col-md-6">
                         <div class="top-header-right">
@@ -86,14 +80,14 @@
                                     </li>
                                 </ul>
                             </div>
-                            <div class="language-list">
-                                <select class="language-list-item">
-                                    <option>English</option>
-                                    <option>العربيّة</option>
-                                    <option>Deutsch</option>
-                                    <option>Português</option>
-                                    <option>简体中文</option>
-                                </select>	
+                           
+                        </div>
+                    </div>
+
+                    <div class="col-lg-7 col-md-6">
+                        <div class="top-head-left">
+                            <div class="top-contact">
+                                <h3>Support By : <a href="tel:+1(212)-255-5511">011-45696408</a></h3>
                             </div>
                         </div>
                     </div>
@@ -101,6 +95,12 @@
             </div>
         </header>
         <!-- Top Header End -->
+
+        @if (Session::has('success'))
+        <div class="alert alert-success" id="success-message"  style="text-align: left">
+            {{ Session::get('success') }}
+        </div>
+    @endif
 
         <!-- Start Navbar Area -->
         <div class="navbar-area">
@@ -114,13 +114,13 @@
             <div class="main-nav">
                 <div class="container">
                     <nav class="navbar navbar-expand-md navbar-light ">
-                       <a class="navbar-brand" href="">
+                       <a class="navbar-brand" style="margin-left: -11rem" href="">
                             <img src="assets/images/logos/image.png" class="logo-one" alt="Logo">
                             
                         </a>
 
                         <div class="collapse navbar-collapse mean-menu" id="navbarSupportedContent">
-                            <ul class="navbar-nav m-auto flex-row-reverse">
+                            <ul class="navbar-nav m-auto">
                                 <li class="nav-item">
                                     <a href="{{route('home')}}">
                                         Home 
@@ -134,7 +134,7 @@
                                     </a>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="#" class="nav-link">
+                                    <a href="" class="nav-link">
                                         Pages 
                                         <i class='bx bx-caret-down'></i>
                                     </a>
@@ -157,49 +157,7 @@
                                             </a>
                                         </li>
 
-                                        <li class="nav-item">
-                                            <a href="#" class="nav-link">
-                                                Case study 
-                                                <i class='bx bx-caret-down'></i>
-                                            </a>
-                                            <ul class="dropdown-menu">
-                                                <li class="nav-item">
-                                                    <a href="{{route('case')}}" class="nav-link">
-                                                        Case study  
-                                                    </a>
-                                                </li>
-                                                <li class="nav-item">
-                                                    <a href="{{route('casedetails')}}" class="nav-link">
-                                                        Case study Details 
-                                                    </a>
-                                                </li>
-                                            </ul>
-                                        </li>
-
-                                        <li class="nav-item">
-                                            <a href="#" class="nav-link">
-                                                User
-                                                <i class='bx bx-caret-down'></i>
-                                            </a>
-                                            <ul class="dropdown-menu">
-                                                <li class="nav-item">
-                                                    <a href="log-in.html" class="nav-link">
-                                                        Log In
-                                                    </a>
-                                                </li>
-                                                <li class="nav-item">
-                                                    <a href="register.html" class="nav-link">
-                                                        Registration
-                                                    </a>
-                                                </li>
-                                                <li class="nav-item">
-                                                    <a href="forget-password.html" class="nav-link">
-                                                        Forget Password
-                                                    </a>
-                                                </li>
-                                            </ul>
-                                        </li>
-
+                                        
                                         <li class="nav-item">
                                             <a href="{{ route('terms')}}" class="nav-link">
                                                 Terms & Conditions
@@ -216,7 +174,7 @@
                                     </ul>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="#" class="nav-link">
+                                    <a href="" class="nav-link">
                                         Services 
                                         <i class='bx bx-caret-down'></i>
                                     </a>
@@ -236,23 +194,12 @@
                                 </li>
 
                                 <li class="nav-item">
-                                    <a href="#" class="nav-link">
+                                    
+                                    <a href="{{route('blog')}}" class="nav-link">
                                         Blog
-                                        <i class='bx bx-caret-down'></i>
+                                       
                                     </a>
-                                    <ul class="dropdown-menu">
-                                        <li class="nav-item">
-                                            <a href="{{route('blog')}}" class="nav-link">
-                                                Blog Style One 
-                                            </a>
-                                        </li>
-                                        
-                                        <li class="nav-item">
-                                            <a href="{{route('blogdetails')}}" class="nav-link">
-                                                Blog Details 
-                                            </a>
-                                        </li>
-                                    </ul>
+                                   
                                 </li>
 
                                 <li class="nav-item">
@@ -271,7 +218,7 @@
 
                                 <div class="nav-side-item">
                                     <div class="get-btn">
-                                        <a href="contact.html" class="default-btn btn-bg-two border-radius-50">Get A Quote <i class='bx bx-chevron-right'></i></a>
+                                        <a href="{{route('contact')}}" class="default-btn btn-bg-two border-radius-50">Get A Quote <i class='bx bx-chevron-right'></i></a>
                                     </div>	
                                 </div>
                             </div>
@@ -389,7 +336,7 @@
                                     <div class="content">
                                         <i class='bx bx-message'></i>
                                         <h3>Contact Info</h3>
-                                        <a href="mailto:hello@techex.com">info@fusionjon.com</a>
+                                        <a href="mailto:hello@techex.com">support@fusionjon.com</a>
                                     </div>
                                 </li>
                             </ul>
@@ -398,26 +345,23 @@
 
                     <div class="col-lg-8">
                         <div class="contact-form">
-                            @if (Session::has('success'))
-                            <div class="alert alert-success" id="success-message"  style="text-align: left">
-                                {{ Session::get('success') }}
-                            </div>
-                        @endif
-                            <form action="{{route('contact')}}"  method="POST">
+                           
+                            <form action="{{route('contact')}}"  method="POST" id="contactForm">
                                 @csrf
                                 <div class="row">
                                     <div class="col-lg-6">
                                         <div class="form-group">
                                             <label>Your Name <span>*</span></label>
-                                            <input type="text" name="name" id="name" class="form-control" required data-error="Please Enter Your Name" placeholder="Name">
+                                            <input type="text" name="name" id="name" class="form-control" required data-error="Please Enter Your Name" placeholder="Name" style="text-align: left">
                                             <div class="help-block with-errors"></div>
                                         </div>
+                                      
                                     </div>
     
                                     <div class="col-lg-6">
                                         <div class="form-group">
                                             <label>Your Email <span>*</span></label>
-                                            <input type="email" name="email" id="email" class="form-control" required data-error="Please Enter Your Email" placeholder="Email">
+                                            <input type="email" name="email" id="email" class="form-control" required data-error="Please Enter Your Email" placeholder="Email" style="text-align: left">
                                             <div class="help-block with-errors"></div>
                                         </div>
                                     </div>
@@ -425,7 +369,7 @@
                                     <div class="col-lg-6">
                                         <div class="form-group">
                                             <label>Phone Number <span>*</span></label>
-                                            <input type="text" name="phone_number" id="phone_number" required data-error="Please Enter Your number" class="form-control" placeholder="Phone Number">
+                                            <input type="text" name="phone_number" id="phone_number" required data-error="Please Enter Your number" class="form-control" placeholder="Phone Number" style="text-align: left">
                                             <div class="help-block with-errors"></div>
                                         </div>
                                     </div>
@@ -433,7 +377,7 @@
                                     <div class="col-lg-6">
                                         <div class="form-group">
                                             <label>Your Subject <span>*</span></label>
-                                            <input type="text" name="msg_subject" id="msg_subject" class="form-control" required data-error="Please Enter Your Subject" placeholder="Your Subject">
+                                            <input type="text" name="msg_subject" id="msg_subject" class="form-control" required data-error="Please Enter Your Subject" placeholder="Your Subject" style="text-align: left">
                                             <div class="help-block with-errors"></div>
                                         </div>
                                     </div>
@@ -441,17 +385,18 @@
                                     <div class="col-lg-12 col-md-12">
                                         <div class="form-group">
                                             <label>Your Message <span>*</span></label>
-                                            <textarea name="message" class="form-control" id="message" cols="30" rows="8" required data-error="Write your message" placeholder="Your Message"></textarea>
+                                            <textarea name="message" class="form-control" id="message" cols="30" rows="8" required data-error="Write your message" placeholder="Your Message" style="text-align: left"></textarea>
                                             <div class="help-block with-errors"></div>
                                         </div>
                                     </div>
 
                                     <div class="col-lg-12 col-md-12">
                                         <div class="agree-label">
-                                            <input type="checkbox" id="chb1">
+                                            
                                             <label for="chb1">
                                                 Accept <a href="{{ route('terms')}}">Terms & Conditions</a> And <a href="{{ route('privacy')}}">Privacy Policy</a>
                                             </label>
+                                            <input type="checkbox" id="chb1">
                                         </div>
                                     </div>
     
@@ -488,12 +433,10 @@
                         <div class="col-lg-4 col-sm-6">
                             <div class="footer-widget">
                                 <div class="footer-logo">
-                                    <a href="index.html">
-                                        <img src="assets/images/logos/footer-logo.png" alt="Images">
-                                    </a>
+                                    <span style="font-size: 40px; color: white"><b>FusionJon Tech</b></span>
                                 </div>
                                 <p>
-                                    Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auct.Aenean, lorem quis bibendum auct. Aenean sollicitudin lorem.
+                                    Fusionjon is  IOT/IIOT and IT solution providing company known for strong company ethics and professionalism. It has all the bases covered when it comes to providing IIoT and IT solutions of any industry. We also continuously upgrade our approach to keep your industry in an advanced state to be ready for the future.
                                 </p>
                                 <div class="footer-call-content">
                                     <h3>Talk to Our Support</h3>
@@ -558,31 +501,25 @@
                                 <h3>Our Blog</h3>
                                  <ul class="footer-blog">
                                     <li>
-                                        <a href="blog-details.html">
-                                            <img src="assets/images/blog/blog-img-footer.jpg" alt="Images">
-                                        </a>
+                                        
                                         <div class="content">
-                                            <h3><a href="blog-details.html">Product Idea Solution For New Generation</a></h3>
+                                            <h3><a href="{{route('blogdetails')}}">Importance of information technology in today's business landscape</a></h3>
                                             <span>04 Dec 2020</span>
                                         </div>
                                     </li>
 
                                     <li>
-                                        <a href="blog-details.html">
-                                            <img src="assets/images/blog/blog-img-footer2.jpg" alt="Images">
-                                        </a>
+                                       
                                         <div class="content">
-                                            <h3><a href="blog-details.html">New Device Invention for Digital Platform</a></h3>
+                                            <h3><a href="{{route('blogdetails2')}}">Innovation in the digital platform</a></h3>
                                             <span>07 Dec 2020</span>
                                         </div>
                                     </li>
 
                                     <li>
-                                        <a href="blog-details.html">
-                                            <img src="assets/images/blog/blog-img-footer3.jpg" alt="Images">
-                                        </a>
+                                        
                                         <div class="content">
-                                            <h3><a href="blog-details.html">Business Strategy Make His Goal Acheive</a></h3>
+                                            <h3><a href="{{route('blogdetails3')}}">How to improve your website SEO?</a></h3>
                                             <span>10 Dec 2020</span>
                                         </div>
                                     </li>
@@ -640,6 +577,12 @@
                 }
             });
         </script>
+
+
+
+
+
+
         <!-- Color Switch Button End -->
 
         <!-- Jquery Min JS -->

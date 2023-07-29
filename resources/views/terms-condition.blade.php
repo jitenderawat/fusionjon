@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="ar" dir="rtl">
+<html lang="ar" dir="ltr">
 
 <head>
     <!-- Required Meta Tags -->
@@ -52,13 +52,7 @@
     <header class="top-header top-header-bg">
         <div class="container">
             <div class="row align-items-center">
-                <div class="col-lg-7 col-md-6">
-                    <div class="top-head-left">
-                        <div class="top-contact">
-                            <h3>Support By : <a href="tel:+1(212)-255-5511">+1 (212) 255-5511</a></h3>
-                        </div>
-                    </div>
-                </div>
+                
 
                 <div class="col-lg-5 col-md-6">
                     <div class="top-header-right">
@@ -86,14 +80,13 @@
                                 </li>
                             </ul>
                         </div>
-                        <div class="language-list">
-                            <select class="language-list-item">
-                                <option>English</option>
-                                <option>العربيّة</option>
-                                <option>Deutsch</option>
-                                <option>Português</option>
-                                <option>简体中文</option>
-                            </select>
+                        
+                    </div>
+                </div>
+                <div class="col-lg-7 col-md-6">
+                    <div class="top-head-left">
+                        <div class="top-contact">
+                            <h3>Support By : <a href="tel:+1(212)-255-5511">011-45696408</a></h3>
                         </div>
                     </div>
                 </div>
@@ -114,13 +107,13 @@
         <div class="main-nav">
             <div class="container">
                 <nav class="navbar navbar-expand-md navbar-light ">
-                   <a class="navbar-brand" href="">
+                   <a class="navbar-brand" style="margin-left: -11rem" href="">
                         <img src="assets/images/logos/image.png" class="logo-one" alt="Logo">
                         
                     </a>
 
                     <div class="collapse navbar-collapse mean-menu" id="navbarSupportedContent">
-                        <ul class="navbar-nav m-auto flex-row-reverse">
+                        <ul class="navbar-nav m-auto">
                             <li class="nav-item">
                                 <a href="{{ route('home')}}">
                                     Home 
@@ -133,7 +126,7 @@
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a href="#" class="nav-link active">
+                                <a href="" class="nav-link active">
                                     Pages
                                     <i class='bx bx-caret-down'></i>
                                 </a>
@@ -156,48 +149,8 @@
                                         </a>
                                     </li>
 
-                                    <li class="nav-item">
-                                        <a href="#" class="nav-link">
-                                            Case Study
-                                            <i class='bx bx-caret-down'></i>
-                                        </a>
-                                        <ul class="dropdown-menu">
-                                            <li class="nav-item">
-                                                <a href="{{route('case')}}" class="nav-link">
-                                                    Case Study
-                                                </a>
-                                            </li>
-                                            <li class="nav-item">
-                                                <a href="{{route('casedetails')}}" class="nav-link">
-                                                    Case Study Details
-                                                </a>
-                                            </li>
-                                        </ul>
-                                    </li>
-
-                                    <li class="nav-item">
-                                        <a href="#" class="nav-link">
-                                            User
-                                            <i class='bx bx-caret-down'></i>
-                                        </a>
-                                        <ul class="dropdown-menu">
-                                            <li class="nav-item">
-                                                <a href="log-in.html" class="nav-link">
-                                                    Log In
-                                                </a>
-                                            </li>
-                                            <li class="nav-item">
-                                                <a href="register.html" class="nav-link">
-                                                    Registration
-                                                </a>
-                                            </li>
-                                            <li class="nav-item">
-                                                <a href="forget-password.html" class="nav-link">
-                                                    Forget Password
-                                                </a>
-                                            </li>
-                                        </ul>
-                                    </li>
+                                   
+                                   
 
                                     <li class="nav-item">
                                         <a href="{{ route('terms')}}" class="nav-link active">
@@ -215,7 +168,7 @@
                             </li>
 
                             <li class="nav-item">
-                                <a href="#" class="nav-link">
+                                <a href="" class="nav-link">
                                     Services 
                                     <i class='bx bx-caret-down'></i>
                                 </a>
@@ -235,23 +188,12 @@
                             </li>
 
                             <li class="nav-item">
-                                <a href="#" class="nav-link">
-                                    Blog
-                                    <i class='bx bx-caret-down'></i>
-                                </a>
-                                <ul class="dropdown-menu">
-                                    <li class="nav-item">
-                                        <a href="{{route('blogdetails')}}" class="nav-link">
-                                            Blog Style One 
-                                        </a>
-                                    </li>
                                     
-                                    <li class="nav-item">
-                                        <a href="blog-details.html" class="nav-link">
-                                            Blog Details 
-                                        </a>
-                                    </li>
-                                </ul>
+                                <a href="{{route('blog')}}" class="nav-link">
+                                    Blog
+                                   
+                                </a>
+                               
                             </li>
 
                             <li class="nav-item">
@@ -298,7 +240,7 @@
                                     <i class='bx bx-search'></i>
                                 </div>
                                 <div class="get-btn">
-                                    <a href="contact.html" class="default-btn btn-bg-two border-radius-50">Get A Quote
+                                    <a href="{{route('contact')}}" class="default-btn btn-bg-two border-radius-50">Get A Quote
                                         <i class='bx bx-chevron-right'></i></a>
                                 </div>
                             </div>
@@ -381,7 +323,7 @@
                             policy (hereinafter referred to as the ‘Agreement’), along with
                             the terms and conditions as stated in our Privacy Policy
                             (please refer to the Privacy Policy section below for more
-                            information)
+                            information).
                         </p>
                         <p style="text-align: left">
                             We reserve the right to change this Agreement from time to time
@@ -389,14 +331,14 @@
                             responsibility to review this Agreement periodically to familiarize
                             yourself with any modifications. Your continued use of this site
                             after such modifications will constitute acknowledgment and
-                            agreement of the modified terms and conditions
+                            agreement of the modified terms and conditions.
                         </p>
                         <p style="text-align: left">
                             PLEASE READ THIS TERMS OF SERVICE AGREEMENT
                             CAREFULLY. BY USING THIS WEBSITE OR ORDERING
                             PRODUCTS FROM THIS WEBSITE YOU AGREE TO BE
                             BOUND BY ALL OF THE TERMS AND CONDITIONS OF THIS
-                            AGREEMENT
+                            AGREEMENT.
                         </p>
                         <p style="text-align: left">
                             This Agreement governs your use of this website
@@ -421,7 +363,7 @@
                            <b>FUSIONJON TECH PRIVATE LIMITED </b>for other products or
                             services. If you do not agree to this Agreement (including any
                             referenced policies or guidelines), please immediately terminate
-                            your use of the Website
+                            your use of the Website.
                         </p>
                     </div>
 
@@ -442,7 +384,7 @@
                             any means other than through the means we provide, is strictly
                             prohibited. You specifically agree not to access (or attempt to
                             access) any of our Resources/ through any automated, unethical
-                            or unconventional means
+                            or unconventional means.
 
                         </p>
                         <p style="text-align: left">
@@ -454,7 +396,7 @@
                             You are solely responsible for any consequences, losses, or
                             damages that we may directly or indirectly incur or suffer due to
                             any unauthorized activities conducted by you, as explained
-                            above, and may incur criminal or civil liability
+                            above, and may incur criminal or civil liability.
 
                         </p>
                     </div>
@@ -468,7 +410,7 @@
                             manage, process, secure, and store your private information.
                             Please refer to <b>FUSIONJON TECH PRIVATE LIMITED </b> privacy
                             policy, incorporated by reference herein, that is posted on the
-                            Website
+                            Website.
 
                         </p>
 
@@ -482,7 +424,7 @@
                             representatives, while they are calling you, of your desire to opt
                             out from further direct company communications and
                             solicitations, you are agreeing to continue to receive further
-                            emails and call solicitations from <b>FUSIONJON TECH PRIVATE LIMITED </b> and its designated in house or third party call team(s)
+                            emails and call solicitations from <b>FUSIONJON TECH PRIVATE LIMITED </b> and its designated in house or third party call team(s).
 
                         </p>
 
@@ -502,7 +444,7 @@
                             to continue to receive further emails and call solicitations
                             from <b>FUSIONJON TECH PRIVATE LIMITED </b> & ADDRESS <b>E
                             - 31A, JAWAHAR PARK, NEAR HEERA SWEETS, LAXMI
-                            NAGAR, Delhi - 110092</b>
+                            NAGAR, Delhi - 110092.</b>
                         </p>
 
                     </div>
@@ -514,7 +456,7 @@
                             <b>FUSIONJON TECH PRIVATE LIMITED </b> also has rights to all
                             trademarks and trade dress and specific layouts of this webpage,
                             including calls to action, text placement, images and other
-                            information
+                            information.
                         </p>
 
                     </div>
@@ -538,7 +480,7 @@
                             <b>FUSIONJON TECH PRIVATE LIMITED </b> is not responsible for
                             the content of or any damage that may result from your access to
                             or reliance on these third-party websites. If you link to third-party
-                            websites, you do so at your own risk
+                            websites, you do so at your own risk.
 
                         </p>
                     </div>
@@ -555,7 +497,7 @@
                             the Website, not engage, directly or indirectly, in transmission of
                             "spam", chain letters, junk mail or any other type of unsolicited
                             communication,and
-                            not defame, harass, abuse, or disrupt other users of the Website
+                            not defame, harass, abuse, or disrupt other users of the Website.
                         </p>
                     </div>
 
@@ -568,7 +510,7 @@
                             the Website. You may not copy, reproduce, transmit, distribute, or
                             create derivative works of such content or information without
                             express written authorization from  <b>FUSIONJON TECH PRIVATE LIMITED </b> or the applicable third party (if third party content is at
-                            issue)
+                            issue).
                         </p>
                     </div>
 
@@ -595,7 +537,7 @@
                             contains any type of unauthorized or unsolicited advertising;
                             impersonates any person or entity, including any
                             <b>www.fusionjon.com/FUSIONJON TECH PRIVATE LIMITED </b>
-                            employees or representatives
+                            employees or representatives.
                         </p>
                         <p style="text-align: left">
                             We have the right at our sole discretion to remove any content
@@ -619,7 +561,7 @@
                             does not refer to information that is provided as part of the
                             registration process, necessary in order to use our Resources.
                             All information provided as part of our registration process is
-                            covered by our Privacy Policy
+                            covered by our Privacy Policy.
 
                         </p>
                         <p style="text-align: left">
@@ -635,7 +577,7 @@
                             account. We reserve the right to take over the exclusive defense
                             of any claim for which we are entitled to indemnification under
                             this User Agreement. In such event, you shall provide us with
-                            such cooperation as is reasonably requested by us
+                            such cooperation as is reasonably requested by us.
                         </p>
                     </div>
 
@@ -654,7 +596,7 @@
                             from any posts by or interactions between users. FUSIONJON
                             TECH PRIVATE LIMITED reserves the right, but has no
                             obligation, to monitor interactions between and among users of
-                            the Website and to remove any content <b>FUSIONJON TECH PRIVATE LIMITED </b> deems objectionable, in  <b>FUSIONJON TECH PRIVATE LIMITED </b>'s sole discretion
+                            the Website and to remove any content <b>FUSIONJON TECH PRIVATE LIMITED </b> deems objectionable, in  <b>FUSIONJON TECH PRIVATE LIMITED </b>'s sole discretion.
                         </p>
                     </div>
 
@@ -679,7 +621,7 @@
                             herein
                             Some jurisdictions do not allow the exclusion of certain
                             warranties, so some of the above exclusions may not apply to
-                            you
+                            you.
                         </p>
                     </div>
 
@@ -689,7 +631,7 @@
                             <b>FUSIONJON TECH PRIVATE LIMITED </b>’s entire liability, and
                             your exclusive remedy, in law, in equity, or otherwise, with
                             respect to the website content / and/or for any breach of this
-                            agreement is solely limited to the amount you paid
+                            agreement is solely limited to the amount you paid.
                         </p>
                         <p style="text-align: left" style="text-align: left">
                             <b>FUSIONJON TECH PRIVATE LIMITED </b> will not be liable for any
@@ -712,7 +654,7 @@
                             or exemplary loss or damages which may be incurred by you as
                             a result of using our Resources / , or as a result of any changes,
                             data loss or corruption, cancellation, loss of access, or downtime
-                            to the full extent that applicable limitation of liability laws apply
+                            to the full extent that applicable limitation of liability laws apply.
 
                         </p>
                     </div>
@@ -731,7 +673,7 @@
                             any intellectual property or other proprietary right of any person
                             or entity;
                             your violation of any provision of this Agreement; or
-                            any information or data you supplied to <b>FUSIONJON TECH PRIVATE LIMITED </b></p>
+                            any information or data you supplied to <b>FUSIONJON TECH PRIVATE LIMITED. </b></p>
                         <p style="text-align: left" style="text-align: left">
                             When  <b>FUSIONJON TECH PRIVATE LIMITED </b> is threatened with
                             suit or sued by a third party, <b>FUSIONJON TECH PRIVATE LIMITED </b> may seek written assurances from you concerning your
@@ -749,7 +691,7 @@
                             against any claim, but you must receive  <b>FUSIONJON TECH PRIVATE LIMITED </b>’s prior written consent regarding any related
                             settlement. The terms of this provision will survive any
                             termination or cancellation of this Agreement or your use of the
-                            Website 
+                            Website.
                         </p>
                     </div>
                     <div class="single-content">
@@ -761,7 +703,7 @@
                             copyright and trademark law. Any inappropriate use, including
                             but not limited to the reproduction, distribution, display or
                             transmission of any content on this site is strictly prohibited,
-                            unless specifically authorized by <b>FUSIONJON TECH PRIVATE LIMITED </b>
+                            unless specifically authorized by <b>FUSIONJON TECH PRIVATE LIMITED.</b>
                         </p>
                     </div>
                     <div class="single-content">
@@ -770,7 +712,7 @@
                             BY USING THIS WEBSITE OR ORDERING, YOU
 ACKNOWLEDGE THAT YOU HAVE READ AND AGREE TO BE
 BOUND BY THIS AGREEMENT AND ALL TERMS AND
-CONDITIONS ON THIS WEBSITE
+CONDITIONS ON THIS WEBSITE.
                         </p>
                     </div>
 
@@ -802,7 +744,7 @@ accessing our website, you agree that the statutes and laws of
 <b>Delhi</b>, India, without regard to its conflict of law principles to the
 contrary and the United Nations Convention on the International
 Sales of Goods, will apply to all matters relating to the use of this
-website
+website.
                         </p>
                     </div>
 
@@ -816,7 +758,7 @@ of this Agreement is found by a court of competent jurisdiction to
 be invalid, the parties nevertheless agree that the court should
 endeavor to give effect to the parties' intentions as reflected in
 the provision and the other provisions of this Agreement remain
-in full force and effect
+in full force and effect.
 
                         </p>
                     </div>
@@ -844,7 +786,7 @@ using this Website or ordering, you consent to the jurisdiction
 and venue of such courts in connection with any action, suit,
 proceeding or claim arising under or by reason of this
 Agreement. You hereby waive any right to trial by jury arising out
-of this Agreement and any related documents
+of this Agreement and any related documents.
                         </p>
                         <p style="text-align: left" style="text-align: left">
                             This website is controlled by  <b>FUSIONJON TECH PRIVATE LIMITED </b> from our offices located in the state of <b>Delhi</b>, India. It
@@ -858,7 +800,7 @@ Furthermore, any action to enforce this User Agreement shall be
 brought in the courts having jurisdiction over such issue, located
 in <b>Delhi</b>, India. You hereby agree to judgement passed by such
 courts and waive any right to jurisdictional, venue, or
-inconvenient forum objections to such courts
+inconvenient forum objections to such courts.
 
                         </p>
                     </div>
@@ -867,18 +809,18 @@ inconvenient forum objections to such courts
                         <p style="text-align: left" style="text-align: left">You agree that regardless of any statute or law to the contrary,
                             any claim or cause of action arising out of or related to use of the
                             Website or or this Agreement must be filed within one (1) year
-                            after such claim or cause of action arose else be forever barred
+                            after such claim or cause of action arose else be forever barred.
                         </p>
                     </div>
                     <div class="single-content">
-                        <h style="text-align: left"3>Waiver of Class Action Rights</h3>
+                        <h3 style="text-align: left">Waiver of Class Action Rights</h3>
                         <p style="text-align: left">BY ENTERING INTO THIS AGREEMENT, YOU HEREBY
                             IRREVOCABLY WAIVE ANY RIGHT YOU MAY HAVE TO JOIN
                             CLAIM WITH THOSE OF OTHERS IN THE FORM OF A CLASS
                             ACTION OR SIMILAR PROCEDURAL DEVICE. ANY CLAIMS
                             ARISING OUT OF OR RELATING TO OR IN CONNECTION
                             WITH THIS AGREEMENT MUST BE ASSERTED
-                            INDIVIDUALLY
+                            INDIVIDUALLY.
                         </p>
                     </div>
                     <div class="single-content">
@@ -893,7 +835,7 @@ terminated,  <b>FUSIONJON TECH PRIVATE LIMITED </b> reserves the
 right to exercise whatever means it deems necessary to prevent
 unauthorized access of the Website. This Agreement will survive
 indefinitely unless and until  <b>FUSIONJON TECH PRIVATE LIMITED </b> chooses, in its sole discretion and without advance
-notice to you, to terminate it
+notice to you, to terminate it.
                         </p>
                     </div>
 
@@ -905,7 +847,7 @@ representation that the Website or are appropriate or available
 for use in locations outside India. Users who access the Website
 from outside India do so at their own risk and initiative and must
 bear all responsibility for compliance with any applicable local
-laws
+laws.
                         </p>
                     </div>
                     <div class="single-content">
@@ -915,7 +857,7 @@ laws
 warranties and conditions of any kind, whether express or
 implied, including, but not limited to the implied warranties and
 conditions of merchantability, fitness of content / for a particular
-purpose and non-infringement
+purpose and non-infringement.
                         </p>
                     </div>
                     <div class="single-content">
@@ -924,19 +866,19 @@ purpose and non-infringement
                             You may not assign your rights and obligations under this
 Agreement to anyone. <b>FUSIONJON TECH PRIVATE LIMITED </b>
 may assign its rights and obligations under this Agreement in its
-sole discretion and without advance notice to you
+sole discretion and without advance notice to you.
                         </p>
                         <p style="text-align: left">
                             BY USING THIS WEBSITE OR ORDERING FROM THIS
 WEBSITE YOU AGREE TO BE BOUND BY ALL OF THE
-TERMS AND CONDITIONS OF THIS AGREEMENT
+TERMS AND CONDITIONS OF THIS AGREEMENT.
                         </p>
                     </div>
                     <div class="single-content">
                         <h3 style="text-align: left">Contact Information</h3>
                         <p style="text-align: left">
                             If you have any questions or comments about these our Terms of
-Service as outlined above, you can contact us at
+Service as outlined above, you can contact us at.
                         </p>
                         <p style="text-align: left">
                             <b>FUSIONJON TECH PRIVATE LIMITED
@@ -961,13 +903,10 @@ Service as outlined above, you can contact us at
                     <div class="col-lg-4 col-sm-6">
                         <div class="footer-widget">
                             <div class="footer-logo">
-                                <a href="index.html">
-                                    <img src="assets/images/logos/footer-logo.png" alt="Images">
-                                </a>
+                                <span style="font-size: 40px; color: white"><b>FusionJon Tech</b></span>
                             </div>
                             <p>
-                                Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum
-                                auct.Aenean, lorem quis bibendum auct. Aenean sollicitudin lorem
+                                Fusionjon is  IOT/IIOT and IT solution providing company known for strong company ethics and professionalism. It has all the bases covered when it comes to providing IIoT and IT solutions of any industry. We also continuously upgrade our approach to keep your industry in an advanced state to be ready for the future.
                             </p>
                             <div class="footer-call-content">
                                 <h3>Talk to Our Support</h3>
@@ -1030,41 +969,34 @@ Service as outlined above, you can contact us at
                     <div class="col-lg-3 col-sm-6">
                         <div class="footer-widget pl-5">
                             <h3>Our Blog</h3>
-                            <ul class="footer-blog">
+                             <ul class="footer-blog">
                                 <li>
-                                    <a href="blog-details.html">
-                                        <img src="assets/images/blog/blog-img-footer.jpg" alt="Images">
-                                    </a>
+                                    
                                     <div class="content">
-                                        <h3><a href="blog-details.html">Product Idea Solution For New Generation</a>
-                                        </h3>
+                                        <h3><a href="{{route('blogdetails')}}">Importance of information technology in today's business landscape</a></h3>
                                         <span>04 Dec 2020</span>
                                     </div>
                                 </li>
 
                                 <li>
-                                    <a href="blog-details.html">
-                                        <img src="assets/images/blog/blog-img-footer2.jpg" alt="Images">
-                                    </a>
+                                   
                                     <div class="content">
-                                        <h3><a href="blog-details.html">New Device Invention for Digital Platform</a>
-                                        </h3>
+                                        <h3><a href="{{route('blogdetails2')}}">Innovation in the digital platform</a></h3>
                                         <span>07 Dec 2020</span>
                                     </div>
                                 </li>
 
                                 <li>
-                                    <a href="blog-details.html">
-                                        <img src="assets/images/blog/blog-img-footer3.jpg" alt="Images">
-                                    </a>
+                                    
                                     <div class="content">
-                                        <h3><a href="blog-details.html">Business Strategy Make His Goal Acheive</a></h3>
+                                        <h3><a href="{{route('blogdetails3')}}">How to improve your website SEO?</a></h3>
                                         <span>10 Dec 2020</span>
                                     </div>
                                 </li>
                             </ul>
                         </div>
                     </div>
+
 
                     <div class="col-lg-3 col-sm-6">
                         <div class="footer-widget">

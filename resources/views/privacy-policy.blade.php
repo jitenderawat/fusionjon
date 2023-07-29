@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="ar" dir="rtl">
+<html lang="ar" dir="ltr">
     <head>
         <!-- Required Meta Tags -->
         <meta charset="UTF-8">
@@ -50,13 +50,7 @@
         <header class="top-header top-header-bg">
             <div class="container">
                 <div class="row align-items-center">
-                    <div class="col-lg-7 col-md-6">
-                        <div class="top-head-left">
-                            <div class="top-contact">
-                                <h3>Support By : <a href="tel:+1(212)-255-5511">+1 (212) 255-5511</a></h3>
-                            </div>
-                        </div>
-                    </div>
+                    
 
                     <div class="col-lg-5 col-md-6">
                         <div class="top-header-right">
@@ -84,14 +78,13 @@
                                     </li>
                                 </ul>
                             </div>
-                            <div class="language-list">
-                                <select class="language-list-item">
-                                    <option>English</option>
-                                    <option>العربيّة</option>
-                                    <option>Deutsch</option>
-                                    <option>Português</option>
-                                    <option>简体中文</option>
-                                </select>	
+                           
+                        </div>
+                    </div>
+                    <div class="col-lg-7 col-md-6">
+                        <div class="top-head-left">
+                            <div class="top-contact">
+                                <h3>Support By : <a href="tel:+1(212)-255-5511">011-45696408</a></h3>
                             </div>
                         </div>
                     </div>
@@ -112,12 +105,12 @@
             <div class="main-nav">
                 <div class="container">
                     <nav class="navbar navbar-expand-md navbar-light ">
-                       <a class="navbar-brand" href="">
+                       <a class="navbar-brand" style="margin-left: -11rem" href="">
                             <img src="assets/images/logos/image.png" class="logo-one" alt="Logo">
                             
                         </a>
                         <div class="collapse navbar-collapse mean-menu" id="navbarSupportedContent">
-                            <ul class="navbar-nav m-auto flex-row-reverse">
+                            <ul class="navbar-nav m-auto">
                                 <li class="nav-item">
                                     <a href="{{ route('home')}}">
                                         Home 
@@ -153,48 +146,8 @@
                                             </a>
                                         </li>
 
-                                        <li class="nav-item">
-                                            <a href="#" class="nav-link">
-                                                Case Study 
-                                                <i class='bx bx-caret-down'></i>
-                                            </a>
-                                            <ul class="dropdown-menu">
-                                                <li class="nav-item">
-                                                    <a href="{{route('case')}}" class="nav-link">
-                                                        Case Study  
-                                                    </a>
-                                                </li>
-                                                <li class="nav-item">
-                                                    <a href="{{route('casedetails')}}" class="nav-link">
-                                                        Case Study Details 
-                                                    </a>
-                                                </li>
-                                            </ul>
-                                        </li>
-
-                                        <li class="nav-item">
-                                            <a href="#" class="nav-link">
-                                                User
-                                                <i class='bx bx-caret-down'></i>
-                                            </a>
-                                            <ul class="dropdown-menu">
-                                                <li class="nav-item">
-                                                    <a href="log-in.html" class="nav-link">
-                                                        Log In
-                                                    </a>
-                                                </li>
-                                                <li class="nav-item">
-                                                    <a href="register.html" class="nav-link">
-                                                        Registration
-                                                    </a>
-                                                </li>
-                                                <li class="nav-item">
-                                                    <a href="forget-password.html" class="nav-link">
-                                                        Forget Password
-                                                    </a>
-                                                </li>
-                                            </ul>
-                                        </li>
+                                       
+                                        
 
                                         <li class="nav-item">
                                             <a href="{{ route('terms')}}" class="nav-link">
@@ -213,7 +166,7 @@
                                 </li>
 
                                 <li class="nav-item">
-                                    <a href="#" class="nav-link">
+                                    <a href="" class="nav-link">
                                         Services 
                                         <i class='bx bx-caret-down'></i>
                                     </a>
@@ -233,23 +186,12 @@
                                 </li>
 
                                 <li class="nav-item">
-                                    <a href="#" class="nav-link">
+                                    
+                                    <a href="{{route('blog')}}" class="nav-link">
                                         Blog
-                                        <i class='bx bx-caret-down'></i>
+                                       
                                     </a>
-                                    <ul class="dropdown-menu">
-                                        <li class="nav-item">
-                                            <a href="{{route('blog')}}" class="nav-link">
-                                                Blog Style One 
-                                            </a>
-                                        </li>
-                                        
-                                        <li class="nav-item">
-                                            <a href="{{route('blogdetails')}}" class="nav-link">
-                                                Blog Details 
-                                            </a>
-                                        </li>
-                                    </ul>
+                                   
                                 </li>
 
                                 <li class="nav-item">
@@ -268,7 +210,7 @@
 
                                 <div class="nav-side-item">
                                     <div class="get-btn">
-                                        <a href="contact.html" class="default-btn btn-bg-two border-radius-50">Get A Quote <i class='bx bx-chevron-right'></i></a>
+                                        <a href="{{route('contact')}}" class="default-btn btn-bg-two border-radius-50">Get A Quote <i class='bx bx-chevron-right'></i></a>
                                     </div>	
                                 </div>
                             </div>
@@ -380,7 +322,7 @@
                                 user information we collect from you, the policies and procedures
                                 on the collection, use, disclosure and protection of your
                                 information when you use our <b>FUSIONJON TECH PRIVATE
-                                LIMITED </b>Platform
+                                LIMITED </b>Platform.
                             </p>
                             <p style="text-align: left">
                                 This Privacy Policy applies to current and former visitors to
@@ -389,26 +331,26 @@
                                 to this Privacy Policy. <b>FUSIONJON TECH PRIVATE LIMITED </b>
                                 may change this policy from time to time by updating this page.
                                 You should check this page from time to time to ensure that you
-                                are happy with any changes
+                                are happy with any changes.
                             </p>
                             <p style="text-align: left"><b>www.fusionjon.com</b> is a property of <b>FUSIONJON TECH PRIVATE
                                 LIMITED </b>, established under laws of India, having its
                                 registered office at <b>E- 31 A, TOP FLOOR, JAWAHAR PARK,
-                                NEAR HEERA SWEETS, LAXMI NAGAR, Delhi -110092 </b></p>
+                                NEAR HEERA SWEETS, LAXMI NAGAR, Delhi -110092. </b></p>
                         </div>
 
                         <div class="single-content">
                             <h3 style="text-align: left">DEFINITIONS</h3>
                             <p style="text-align: left">
                                 The terms "<b>FJ TECH</b>", "Company", "we", "us" and "our" refer
-                                to the <b>FUSIONJON TECH PRIVATE LIMITED</b>
+                                to the <b>FUSIONJON TECH PRIVATE LIMITED.</b>
                                 
                             </p>
                             <p style="text-align: left">
                                 The term "<b>FUSIONJON TECH PRIVATE LIMITED</b> Platform"
                                 refers to <b>www.fusionjon.com </b>or the <b>FUSIONJON TECH
                                 PRIVATE LIMITED</b> mobile application or any other digital
-                                medium and other offline sources
+                                medium and other offline sources.
                                 
                             </p>
                             <p style="text-align: left">The terms "you" and "your" refer to the user of the
@@ -420,18 +362,18 @@ such person, or any entity that is under common control with
 such person, whether directly or indirectly, or, in the case of a
 natural person, any Relative (as such term is defined in the
 Companies Act, 1956 and Companies Act, 2013 to the extent
-applicable) of such person
+applicable) of such person.
                                 </p>
                                 <p style="text-align: left">The term "Services" refers to any services offered by
                                     <b>FUSIONJON TECH PRIVATE LIMITED </b> whether on the Swiggy
-                                    Platform or otherwise
+                                    Platform or otherwise.
                                     </p>
                                     <p style="text-align: left">
                                         The term "Policy" refers to this Privacy Policy.
 Please read this Policy before using the<b>FUSIONJON TECH PRIVATE LIMITED </b>Platform or submitting any personal
 information to <b>FUSIONJON TECH PRIVATE LIMITED </b>. This
 Policy is a part of and incorporated within, and is to be read
-along with, the Terms of Use
+along with, the Terms of Use.
                                     </p>
                         </div>
 
@@ -439,7 +381,7 @@ along with, the Terms of Use
                             <h3 style="text-align: left">INFORMATION WE COLLECT FROM YOU</h3>
                             <p style="text-align: left"><b>Contact information</b></p>
                             <p style="text-align: left">
-                                We might collect your <b>Name, Email, IP Address</b>.
+                                We might collect your <b>Name, Email, IP Address.</b>
                             </p>
                             <p style="text-align: left"><b>Payment and billing information</b></p>
                             <p style="text-align: left">
@@ -448,12 +390,12 @@ method when you buy a product/service. We NEVER collect your
 credit card number or credit card expiry date or other details
 pertaining to your credit card on our website. Credit card
 information will be obtained and processed by our online
-payment partner
+payment partner.
                             </p>
                             <p style="text-align: left"><b>Information you post </b></p>
                             <p style="text-align: left">
                                 We collect information you post in a public space on our
-                                <b>FUSIONJON TECH PRIVATE LIMITED </b> Platform or on a thirdparty social media site belonging to <b>FUSIONJON TECH PRIVATE LIMITED </b>
+                                <b>FUSIONJON TECH PRIVATE LIMITED </b> Platform or on a thirdparty social media site belonging to <b>FUSIONJON TECH PRIVATE LIMITED. </b>
 
                             </p>
                             <p style="text-align: left"><b>Usage and Preference Information</b></p>
@@ -473,7 +415,7 @@ payment partner
                                 versions, operating system and platform, and other information
                                 about user activities on the <b>FUSIONJON TECH PRIVATE LIMITED </b>, as well as on third party sites and services
                                 that have embedded our Pixels, widgets, plug-ins, buttons, or
-                                related services</p>
+                                related services.</p>
                                 <p style="text-align: left"><b>Transaction Information</b></p>
                                 <p style="text-align: left">We collect transaction details related to your use of our Services,
                                     and information about your activity on the Services, including the
@@ -485,7 +427,7 @@ payment partner
                                     charged, details regarding application of promotional code,
                                     methods used to browse away from the page and any phone
                                     number used to call our customer service number and other
-                                    related transaction details
+                                    related transaction details.
                                     </p>
                                     <p style="text-align: left"><b>Stored information and files</b></p>
                                     <p style="text-align: left"><b>FUSIONJON TECH PRIVATE LIMITED </b> mobile application
@@ -503,12 +445,12 @@ payment partner
                                         location and number of attendees. If you are a partner company,
                                         we will, additionally, record your calls with us made from the
                                         device used to provide Services, related call details, SMS details
-                                        location and address details</p>
+                                        location and address details.</p>
                                         <p style="text-align: left"><b>Demographic information</b></p>
                                         <p style="text-align: left">We may collect demographic information about you, events you
                                             like, events you intend to participate in, tickets you buy, or any
                                             other information provided by you during the use of <b>FUSIONJON TECH PRIVATE LIMITED </b> Platform. We might collect this as a
-                                            part of a survey also</p>
+                                            part of a survey also.</p>
                                             <p style="text-align: left"><b>Other information</b></p>
                                             <p style="text-align: left">If you use <b>FUSIONJON TECH PRIVATE LIMITED </b> Platform, we
                                                 may collect information about your IP address and the browser
@@ -516,7 +458,7 @@ payment partner
                                                 of time spent on our website, pages accessed or what site you
                                                 visit when you leave us. We might also collect the type of mobile
                                                 device you are using, or the version of the operating system your
-                                                computer or device is running
+                                                computer or device is running.
                                                 </p>
                         </div>
 
@@ -529,7 +471,7 @@ payment partner
                                 We collect information directly from you when you register on
                                 <b>FUSIONJON TECH PRIVATE LIMITED </b> Platform. We also collect
 information if you post a comment on <b>FUSIONJON TECH PRIVATE LIMITED </b> Platform or ask us a question through phone
-or email or any other source of communication
+or email or any other source of communication.
 
                             </p>
                             <p style="text-align: left"><b>We collect information from you passively</b></p>
@@ -546,7 +488,7 @@ or email or any other source of communication
                                     services or apps. For example, users of our Ad Services may
                                     also be able to share customer list information (e.g., email or
                                     phone number) with us to create customized audience segments
-                                    for their ad campaigns</p>
+                                    for their ad campaigns.</p>
                                     <p style="text-align: left">When you sign in to <b>FUSIONJON TECH PRIVATE LIMITED </b>
                                         Platform with your SNS account, or otherwise connect to your
                                         SNS account with the Services, you consent to our collection,
@@ -558,10 +500,10 @@ or email or any other source of communication
                                         or information that is disclosed during the sign-in process. Please
                                         see your social media provider’s privacy policy and help center
                                         for more information about how they share information when you
-                                        choose to connect your account
+                                        choose to connect your account.
                                         </p>
                                         <p style="text-align: left">If you are partner company, we may, additionally, receive
-                                            feedback and rating from other users
+                                            feedback and rating from other users.
                                             </p>
                                             
                         </div>
@@ -569,7 +511,7 @@ or email or any other source of communication
                         <div class="single-content">
                             <h3 style="text-align: left"> USE OF YOUR PERSONAL INFORMATION</h3>
                             <p style="text-align: left">
-                                <b>We use information to contact you</b>
+                                <b>We use information to contact you.</b>
                             </p>
                             <p style="text-align: left">We might use the information you provide to contact you for
                                 confirmation of a purchase on <b>FUSIONJON TECH PRIVATE LIMITED </b> Platform or for other promotional purposes.</p>
@@ -578,7 +520,7 @@ or email or any other source of communication
                                 We might use the information you provide to carry out our
                                 obligations arising from any contracts entered into between you
                                 and us and to provide you with the relevant information and
-                                services
+                                services.
                             </p>
                             <p style="text-align: left"><b>We use information to respond to your requests or
                                 questions</b></p>
@@ -597,7 +539,7 @@ or email or any other source of communication
                                         and to generate and review reports and data about, and to
                                         conduct research on, our user base and Service usage patterns.
                                         If you are a partner company, we may use the information to
-                                        track the progress of your service to our customers
+                                        track the progress of your service to our customers.
                                         </p>
                                         <p style="text-align: left"><b>We use information to look at site trends and customer
                                             interests
@@ -609,24 +551,24 @@ or email or any other source of communication
                                                 we consider similar to those that you are already using, or have
                                                 enquired about, or may interest you. If you are a registered user,
                                                 we will contact you by electronic means (e-mail or SMS or
-                                                telephone) with information about these services
+                                                telephone) with information about these services.
                                                 </p>
                                                 <p style="text-align: left"><b>We use information for security purposes
                                                 </b></p>
                                                 <p style="text-align: left">We may use information to protect our company, our customers,
-                                                    or our <b>FUSIONJON TECH PRIVATE LIMITED </b> Platform</p>
-                                                    <p style="text-align: left"><b>We use information for marketing purposes:</b></p>
+                                                    or our <b>FUSIONJON TECH PRIVATE LIMITED </b> Platform.</p>
+                                                    <p style="text-align: left"><b>We use information for marketing purposes</b></p>
                                                     <p style="text-align: left">We might send you information about special promotions or
                                                         offers. We might also tell you about new features or products or
                                                         enroll you in our newsletter. These might be our own offers or
                                                         products, or third-party offers or products we think you might find
                                                         interesting. We may use the information to measure or
                                                         understand the effectiveness of advertising we serve to you and
-                                                        others, and to deliver relevant advertising to you</p>
+                                                        others, and to deliver relevant advertising to you.</p>
                                                         <p style="text-align: left"><b>We use information to send you transactional
-                                                            communications</b></p>
+                                                            communications.</b></p>
                                                             <p style="text-align: left">We might send you emails or SMS about your account or
-                                                                purchase of our product</p>
+                                                                purchase of our product.</p>
                                                                 <p style="text-align: left"><b>We use information as otherwise permitted by law</b></p>
                                                                 <p style="text-align: left">We may combine the information that we receive from third
                                                                     parties with the information you give to us and information we
@@ -636,7 +578,7 @@ or email or any other source of communication
                                                                     third-party web analytic tools. As a result, our use and disclosure
                                                                     of aggregated and/or de-identified information is not restricted by
                                                                     this Policy, and it may be used and disclosed to others without
-                                                                    limitation
+                                                                    limitation.
                                                                     </p>
                                                                     <p style="text-align: left">We analyse the log files of our <b>FUSIONJON TECH PRIVATE LIMITED </b> Platform that may contain Internet Protocol (IP)
                                                                         addresses, browser type and language, Internet service provider
@@ -644,7 +586,7 @@ or email or any other source of communication
                                                                         applications, operating system, date/time stamp, and clickstream
                                                                         data. This helps us to administer the website, to learn about user
                                                                         behavior on the site, to improve our product and services, and to
-                                                                        gather demographic information about our user base as a whole
+                                                                        gather demographic information about our user base as a whole.
                                                                         </p>
                         </div>
 
@@ -652,7 +594,7 @@ or email or any other source of communication
                             <h3 style="text-align: left">SHARING/DISCLOSURE/DISTRIBUTION OF YOUR
                                 INFORMATION WITH THIRD-PARTIES</h3>
                                 <p style="text-align: left"><b>We will share information with third parties who perform
-                                    services on our behalf</b></p>
+                                    services on our behalf.</b></p>
                             <p style="text-align: left">
                                 We may share your information with our vendors, consultants,
                                 marketing partners, research firms and other service providers or
@@ -664,17 +606,17 @@ or email or any other source of communication
                                 and collect payments
                                 We may also use vendors for other projects, such as conducting
                                 surveys or organizing sweepstakes for us. Some vendors may be
-                                located outside of India
+                                located outside of India.
                             </p>
                             <p style="text-align: left"><b>We will share information with Advertisers and advertising
-                                networks</b>
+                                networks.</b>
                                 <p style="text-align: left">We may work with third parties such as network advertisers to
                                     serve advertisements on the <b>FUSIONJON TECH PRIVATE LIMITED </b> Platform and on third-party websites or other media
                                     (e.g., social networking platforms). These third parties may use
                                     cookies, JavaScript, web beacons (including clear GIFs), Flash
                                     LSOs and other tracking technologies to measure the
                                     effectiveness of their ads and to personalize advertising content
-                                    to you</p>
+                                    to you.</p>
                                 </p>
                             <p style="text-align: left">
                                 While you cannot opt out of advertising on the <b>FUSIONJON TECH PRIVATE LIMITED </b> Platform, you may opt out of much
@@ -686,25 +628,25 @@ parties ad networks from which you have opted out, which is
 based on your browsing information across multiple sites and
 online services. If you delete cookies or change devices, your
 ‘opt out’ may no longer be effective to fulfill the purpose for which
-you provide it
+you provide it.
                             </p>
-                            <p style="text-align: left"><b>We will share information with our business partners</b></p>
+                            <p style="text-align: left"><b>We will share information with our business partners.</b></p>
                             <p style="text-align: left">This includes a third party who provide us various services. Our
                                 partners use the information we give them as described in their
-                                privacy policies</p>
+                                privacy policies.</p>
                                 <p style="text-align: left">While you place a request to order through the <b>FUSIONJON TECH PRIVATE LIMITED </b> Platform, your information is provided
                                     to us and to the vendors with whom you may choose to order. In
                                     order to facilitate your online order processing, we provide your
                                     information to that vendors in a similar manner as if you had
                                     made a goods/products/food order directly with the vendors. If
                                     you provide a mobile phone number, <b>FUSIONJON TECH PRIVATE LIMITED </b> may send you text messages regarding the
-                                    orders delivery status</p>
+                                    orders delivery status.</p>
                                     <p style="text-align: left"><b>We will share information with Other Users</b></p>
                                     <p style="text-align: left">If you are a delivery partner, we may share your name, phone
                                         number and/or profile picture (if applicable), tracking details with
-                                        other users to provide them the Services</p>
+                                        other users to provide them the Services.</p>
                                         <p style="text-align: left"><b>We may share information if we think we have to in order to
-                                            comply with the law or to protect ourselves</b></p>
+                                            comply with the law or to protect ourselves.</b></p>
                                             <p style="text-align: left">We may also share it if a government agency or investigatory
                                                 body or other companies assisting us, requests when we are:</p>
                                                 <p style="text-align: left">Obligated under the applicable laws or in good faith to respond to
@@ -719,19 +661,19 @@ you provide it
                                                         customers, or others, or in the event of a claim or dispute relating
                                                         to your use of our Services. This includes exchanging information
                                                         with other companies and organisations for the purposes of fraud
-                                                        detection and credit risk reduction</p>
+                                                        detection and credit risk reduction.</p>
                                                         <p style="text-align: left"><b>We may share information for Internal Use or may share it
-                                                            with any successor to all or part of our business</b></p>
+                                                            with any successor to all or part of our business.</b></p>
                                                             <p style="text-align: left">For example, if part of our business is sold we may give our
                                                                 customer list as part of that transaction. We may also share your
                                                                 information with any present or future member of our "Group" (as
-                                                                defined above) or affiliates for our internal business purposes</p>
+                                                                defined above) or affiliates for our internal business purposes.</p>
                                                                 <p style="text-align: left"><b>We may share your information for reasons not described in
-                                                                    this policy
+                                                                    this policy.
                                                                     </b></p>
                                                                     <p style="text-align: left">We may share your information other than as described in this
                                                                         Policy if we notify you and you consent to the sharing. We will tell
-                                                                        you before we do this</p>
+                                                                        you before we do this.</p>
                         </div>
 
                         <div class="single-content">
@@ -741,7 +683,7 @@ you provide it
                                 collection, transfer, use, storage, disclosure and sharing of your
                                 information as described and collected by us in accordance with
                                 this Policy. If you do not agree with the Policy, please do not use
-                                or access the <b>FUSIONJON TECH PRIVATE LIMITED </b> Platform
+                                or access the <b>FUSIONJON TECH PRIVATE LIMITED </b> Platform.
                                 </p>
                            
                         </div>
@@ -754,17 +696,17 @@ you provide it
                                 your use of the Services and third-party websites.</p>
                                 <p style="text-align: left">Cookies are small files that are stored on your browser or
                                     device by websites, apps, online media and advertisements. We
-                                    use cookies and similar technologies for purposes such as
+                                    use cookies and similar technologies for purposes such as.
                                     </p>
-                                    <p style="text-align: left">Authenticating users
+                                    <p style="text-align: left">Authenticating users;
                                     </p>
-                                    <p style="text-align: left">Remembering user preferences and settings</p>
-                                    <p style="text-align: left">Determining the popularity of content</p>
+                                    <p style="text-align: left">Remembering user preferences and settings;</p>
+                                    <p style="text-align: left">Determining the popularity of content;</p>
                                     <p style="text-align: left">Delivering and measuring the effectiveness of advertising
-                                        campaigns</p>
+                                        campaigns;</p>
                                         <p style="text-align: left">Analysing site traffic and trends, and generally understanding the
                                             online behaviours and interests of people who interact with our
-                                            services
+                                            services.
                                             </p>
                                             <p style="text-align: left">A pixel tag (also called a web beacon or clear GIF) is a tiny
                                                 graphic with a unique identifier, embedded invisibly on a
@@ -773,11 +715,11 @@ you provide it
                                                 well as to access cookies stored on users’ computers. We use
                                                 pixel tags to measure the popularity of our various pages,
                                                 features and services. We also may include web beacons in email messages or newsletters to determine whether the message
-                                                has been opened and for other analytics</p>
+                                                has been opened and for other analytics.</p>
                                                 <p style="text-align: left">To modify your cookie settings, please visit your browser’s
                                                     settings. By using our Services with your browser settings to
                                                     accept cookies, you are consenting to our use of cookies in the
-                                                    manner described in this section
+                                                    manner described in this section.
                                                     </p>
                                                     <p style="text-align: left">We may also allow third parties to provide audience
                                                         measurement and analytics services for us, to serve
@@ -787,12 +729,12 @@ you provide it
                                                         technologies to identify your device when you visit the
                                                         <b>FUSIONJON TECH PRIVATE LIMITED </b> Platform and use our
                                                         Services, as well as when you visit other online sites and
-                                                        services
+                                                        services.
                                                     </p>
                                                         <p style="text-align: left">Please see our Cookie Policy here for more information
                                                             regarding the use of cookies and other technologies described in
                                                             this section, including regarding your choices relating to such
-                                                            technologies</p>
+                                                            technologies.</p>
 
                         </div>
                         <div class="single-content">
@@ -811,13 +753,13 @@ you provide it
                                 password which enables you to access certain parts of the
                                 <b>FUSIONJON TECH PRIVATE LIMITED </b> Platform, you are
                                 responsible for keeping these details confidential. We ask you
-                                not to share your password with anyone</p>
+                                not to share your password with anyone.</p>
                                 <p style="text-align: left">Please be aware that the transmission of information via the
                                     internet is not completely secure. Although we will do our best to
                                     protect your personal data, we cannot guarantee the security of
                                     your data transmitted through the <b>FUSIONJON TECH PRIVATE LIMITED </b> Platform. Once we have received your information, we
                                     will use strict physical, electronic, and procedural safeguards to
-                                    try to prevent unauthorised access</p>
+                                    try to prevent unauthorised access.</p>
 
                         </div>
                         <div class="single-content">
@@ -827,7 +769,7 @@ you provide it
                                 (<b>rahul@fusionjon.com</b>). It may take about 2 days to
                                 process your request. Even if you opt out of getting marketing
                                 messages, we will still be sending you transactional messages
-                                through email and SMS about your purchases</p>
+                                through email and SMS about your purchases.</p>
                         </div>
                         <div class="single content">
                             <h3 style="text-align: left">THIRD PARTY SITES</h3>
@@ -841,12 +783,12 @@ you provide it
                                 website accessed using the links contained on the <b>FUSIONJON TECH PRIVATE LIMITED </b> Platform. Read the privacy policy of
                                 other websites carefully as this policy does not apply to the
                                 privacy practices of those websites. We are not responsible for
-                                these third party sites 
+                                these third party sites.
                                 </p>
                                 <p style="text-align: left">This Policy shall also not apply to any information you may
                                     disclose to any of our service providers/service personnel which
                                     we do not require you to disclose to us or any of our service
-                                    providers under this Policy</p>
+                                    providers under this Policy.</p>
 
                         </div>
                         <div class="single-content">
@@ -858,7 +800,7 @@ you provide it
                                 <p style="text-align: left">If you have any queries relating to the processing or usage of
                                     information provided by you in connection with this Policy or
                                     other privacy concerns, you can email us at
-                                    <b>info@fusionjon.com</b></p>
+                                    <b>info@fusionjon.com.</b></p>
                         </div>
                     </div>
                 </div>
@@ -874,12 +816,10 @@ you provide it
                         <div class="col-lg-4 col-sm-6">
                             <div class="footer-widget">
                                 <div class="footer-logo">
-                                    <a href="index.html">
-                                        <img src="assets/images/logos/footer-logo.png" alt="Images">
-                                    </a>
+                                    <span style="font-size: 40px; color: white"><b>FusionJon Tech</b></span>
                                 </div>
                                 <p>
-                                    Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auct.Aenean, lorem quis bibendum auct. Aenean sollicitudin lorem.
+                                    Fusionjon is  IOT/IIOT and IT solution providing company known for strong company ethics and professionalism. It has all the bases covered when it comes to providing IIoT and IT solutions of any industry. We also continuously upgrade our approach to keep your industry in an advanced state to be ready for the future.
                                 </p>
                                 <div class="footer-call-content">
                                     <h3>Talk to Our Support</h3>
@@ -944,37 +884,32 @@ you provide it
                                 <h3>Our Blog</h3>
                                  <ul class="footer-blog">
                                     <li>
-                                        <a href="blog-details.html">
-                                            <img src="assets/images/blog/blog-img-footer.jpg" alt="Images">
-                                        </a>
+                                        
                                         <div class="content">
-                                            <h3><a href="blog-details.html">Product Idea Solution For New Generation</a></h3>
+                                            <h3><a href="{{route('blogdetails')}}">Importance of information technology in today's business landscape</a></h3>
                                             <span>04 Dec 2020</span>
                                         </div>
                                     </li>
 
                                     <li>
-                                        <a href="blog-details.html">
-                                            <img src="assets/images/blog/blog-img-footer2.jpg" alt="Images">
-                                        </a>
+                                       
                                         <div class="content">
-                                            <h3><a href="blog-details.html">New Device Invention for Digital Platform</a></h3>
+                                            <h3><a href="{{route('blogdetails2')}}">Innovation in the digital platform</a></h3>
                                             <span>07 Dec 2020</span>
                                         </div>
                                     </li>
 
                                     <li>
-                                        <a href="blog-details.html">
-                                            <img src="assets/images/blog/blog-img-footer3.jpg" alt="Images">
-                                        </a>
+                                        
                                         <div class="content">
-                                            <h3><a href="blog-details.html">Business Strategy Make His Goal Acheive</a></h3>
+                                            <h3><a href="{{route('blogdetails3')}}">How to improve your website SEO?</a></h3>
                                             <span>10 Dec 2020</span>
                                         </div>
                                     </li>
                                 </ul>
                             </div>
                         </div>
+
 
                         <div class="col-lg-3 col-sm-6">
                             <div class="footer-widget">
