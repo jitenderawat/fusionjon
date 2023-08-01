@@ -359,56 +359,9 @@
                               
                             </div>
 
-                        
+            
 
-
-                            <div class="comments-wrap">
-                                <div class="comment-title">
-                                    <h3 class="title">Comments</h3>
-                                </div>
-								
-								<ul class="comment-list">
-									
-                                    
-                                    <li>
-										<img src="assets/images/blog/blog-profile1.png" alt="Image">
-										<h3>Medison Decros</h3>
-                                        <span>On September 18,2020 at 4.30 pm</span>
-										<p>
-                                            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
-                                            Aenean massa. cu sociis natoque penatibus et magnis dis parturient montes, nascetur ridicule
-                                            us mus. Donec quam felis, ultricies ne, pellentesque. 
-                                        </p>
-                                        <a href=""> Reply</a>
-                                    </li>
-
-                                    <li>
-										<img src="assets/images/blog/blog-profile2.png" alt="Image">
-										<h3>Jekson Albin</h3>
-                                        <span>On September 18,2020 at 4.30 pm</span>
-										<p>
-                                            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
-                                            Aenean massa. cu sociis natoque penatibus et magnis dis parturient montes, nascetur ridicule
-                                            us mus. Donec quam felis, ultricies ne, pellentesque. 
-                                        </p>
-                                        <a href=""> Reply</a>
-                                    </li>
-
-                                    <li>
-										<img src="assets/images/blog/blog-profile3.png" alt="Image">
-										<h3>Bentham Debid</h3>
-                                        <span>On September 18,2020 at 4.30 pm</span>
-										<p>
-                                            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
-                                            Aenean massa. cu sociis natoque penatibus et magnis dis parturient montes, nascetur ridicule
-                                            us mus. Donec quam felis, ultricies ne, pellentesque.
-                                        </p>
-										<a href="">Reply</a>
-                                    </li>
-								</ul>
-                            </div>
-
-                            <div class="comments-form">
+                          <div class="comments-form">
                                 <h3 class="title">Leave A Comment</h3>
                                 <div class="contact-form">
                                     <form id="contactForm">

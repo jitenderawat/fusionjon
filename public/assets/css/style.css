@@ -5712,8 +5712,8 @@ Contact Area
 }
 
 .contact-form .form-group.checkbox-option #chb2 {
-  position: absolute;
-  top: 6px;
+  position: relative;
+  top: 26px;
   left: 0;
 }
 
