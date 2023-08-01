@@ -418,7 +418,7 @@
                                 <h3 class="title">Gallery</h3>
                                 <ul class="blog-gallery">
                                     <li>
-                                        <a href="blog-details.html">
+                                        <a href="https://www.instagram.com/fusionjon/">
                                             <img src="assets/images/blog/instaa.png" alt="image">
                                         </a>
                                     </li>
