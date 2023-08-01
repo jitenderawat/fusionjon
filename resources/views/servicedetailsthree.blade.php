@@ -57,7 +57,7 @@
                             <div class="top-header-social">
                                 <ul>
                                     <li>
-                                        <a href="https://www.facebook.com/" target="_blank">
+                                        <a href="https://www.facebook.com/FusionJon7/" target="_blank">
                                             <i class='bx bxl-facebook'></i>
                                         </a>
                                     </li>
@@ -72,7 +72,7 @@
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="https://www.instagram.com/" target="_blank">
+                                        <a href="https://www.instagram.com/fusionjon/" target="_blank">
                                             <i class='bx bxl-instagram'></i>
                                         </a>
                                     </li>
@@ -383,27 +383,27 @@
                                     <ul>
                                         <li>
                                             <div class="line-circle"></div>
-                                            <a href="" target="_blank">IT Services</a>
+                                            <a href="{{route('servicedetails')}}" target="_blank">IT Consulting</a>
                                         </li>
                                         <li>
                                             <div class="line-circle"></div>
-                                            <a href="" target="_blank">Cloud Computing</a>  
+                                            <a href="{{route('servicedatailstwo')}}" target="_blank">Web Development</a>  
                                         </li>
                                         <li>
                                             <div class="line-circle"></div>
-                                            <a href="" target="_blank">Web Development</a>
+                                            <a href="{{route('servicedatailsthree')}}" target="_blank">Application Development</a>
                                         </li>
                                         <li>
                                             <div class="line-circle"></div>
-                                            <a href="" target="_blank">Business Reform</a>
+                                            <a href="{{route('servicedatailsfour')}}" target="_blank">Digital Marketing</a>
                                         </li>
                                         <li>
                                             <div class="line-circle"></div>
-                                            <a href="" target="_blank">Infrastructure</a>
+                                            <a href="{{route('servicedatailsfive')}}" target="_blank">Software Development</a>
                                         </li>
                                         <li>
                                             <div class="line-circle"></div>
-                                            <a href="" target="_blank">Data Analysis</a>
+                                            <a href="{{route('servicedatailssix')}}" target="_blank">IOT Devices</a>
                                         </li>
                                     </ul>
                                 </div>
@@ -421,73 +421,24 @@
                                 </ul>
                             </div>
 
-                            <div class="side-bar-widget"  style="margin-top: 100px">
+                            <div class="side-bar-widget" style="margin-top: 100px">
                                 <h3 class="title">Gallery</h3>
                                 <ul class="blog-gallery">
                                     <li>
-                                        <a href="" target="_blank">
-                                            <img src="assets/images/blog/blog-small-img1.jpg" alt="image">
+                                        <a href="https://www.instagram.com/fusionjon/" target="_blank">
+                                            <img src="assets/images/blog/instaa.png" alt="image">
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="" target="_blank">
-                                            <img src="assets/images/blog/blog-small-img2.jpg" alt="image">
+                                        <a href="https://www.facebook.com/FusionJon7/" target="_blank">
+                                            <img src="assets/images/blog/facebook.png" alt="image">
                                         </a>
                                     </li>
-                                    <li>
-                                        <a href="" target="_blank">
-                                            <img src="assets/images/blog/blog-small-img3.jpg" alt="image">
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="" target="_blank">
-                                            <img src="assets/images/blog/blog-small-img4.jpg" alt="image">
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="" target="_blank">
-                                            <img src="assets/images/blog/blog-small-img5.jpg" alt="image">
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="" target="_blank">
-                                            <img src="assets/images/blog/blog-small-img6.jpg" alt="image">
-                                        </a>
-                                    </li>
+                                   
                                 </ul>
                             </div>
 
-                            <div class="side-bar-widget"  style="margin-top: 100px">
-                                <h3 class="title">Archive</h3>
-                                <div class="side-bar-categories">
-                                    <ul>
-                                        <li>
-                                            <div class="line-circle"></div>
-                                            <a href="{{route('servicedetails')}}" target="_blank">Design</a>
-                                        </li>
-                                        <li>
-                                            <div class="line-circle"></div>
-                                            <a href="{{route('servicedetails')}}" target="_blank">Business</a>  
-                                        </li>
-                                        <li>
-                                            <div class="line-circle"></div>
-                                            <a href="{{route('servicedetails')}}" target="_blank">Development</a>
-                                        </li>
-                                        <li>
-                                            <div class="line-circle"></div>
-                                            <a href="{{route('servicedetails')}}" target="_blank">Technology </a>
-                                        </li>
-                                        <li>
-                                            <div class="line-circle"></div>
-                                            <a href="{{route('servicedetails')}}" target="_blank">Startup </a>
-                                        </li>
-                                        <li>
-                                            <div class="line-circle"></div>
-                                            <a href="{{route('servicedetails')}}" target="_blank">Marketing Growth </a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
+                           
                         </div>
                     </div>
                 </div>

@@ -57,7 +57,7 @@
                             <div class="top-header-social">
                                 <ul>
                                     <li>
-                                        <a href="https://www.facebook.com/" target="_blank">
+                                        <a href="https://www.facebook.com/FusionJon7/" target="_blank">
                                             <i class='bx bxl-facebook'></i>
                                         </a>
                                     </li>
@@ -72,7 +72,7 @@
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="https://www.instagram.com/" target="_blank">
+                                        <a href="https://www.instagram.com/fusionjon/" target="_blank">
                                             <i class='bx bxl-instagram'></i>
                                         </a>
                                     </li>

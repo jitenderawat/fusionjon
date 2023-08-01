@@ -59,7 +59,7 @@
                             <div class="top-header-social">
                                 <ul>
                                     <li>
-                                        <a href="https://www.facebook.com/" target="_blank">
+                                        <a href="https://www.facebook.com/FusionJon7/" target="_blank">
                                             <i class='bx bxl-facebook'></i>
                                         </a>
                                     </li>
@@ -74,7 +74,7 @@
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="https://www.instagram.com/" target="_blank">
+                                        <a href="https://www.instagram.com/fusionjon/" target="_blank">
                                             <i class='bx bxl-instagram'></i>
                                         </a>
                                     </li>
@@ -746,7 +746,7 @@
                                 <h2 style="text-align: center; color: white; font-size: 40px;     position: relative;
                                 left: 19px;">Contact Us</h2>
                                 <ul style="padding-right: 0rem ">
-                                    <li>
+                                    <li class="none">
 
                                         <div class="content" style="margin-top: 30px">
                                             <i class='bx bxs-map'  style="position: relative;
@@ -758,7 +758,7 @@
                                         </div>
                                     </li>
 
-                                    <li>
+                                    <li class="none">
 
                                         <div class="content" style="margin-top: -9px">
                                             <i class='bx bx-phone-call'   style="position: relative;
@@ -772,7 +772,7 @@
     
                                     
     
-                                    <li>
+                                    <li class="none">
 
                                         <div class="content">
                                             <i class='bx bx-message'  style="position: relative;
