@@ -80,9 +80,9 @@ body {
 }
 
 .main-nav .navbar .navbar-nav .nav-item .dropdown-menu {
-  right: 0;
-  left: auto;
-  text-align: right;
+  right: auto;
+  left: 0;
+  text-align: center;
 }
 
 .main-nav .navbar .navbar-nav .nav-item .dropdown-menu li a::before {
@@ -656,7 +656,7 @@ body {
 }
 
 .side-bar-widget .blog-gallery {
-  padding-right: 0;
+  padding-right: 177px;
   padding-left: unset;
 }
 
@@ -765,13 +765,13 @@ body {
 }
 
 .footer-widget .newsletter-area .newsletter-form .form-control {
-  padding: 0 15px 0 45px;
-  text-align: right;
+  padding: 0 15px 0 60px;
+  text-align: left;
 }
 
 .footer-widget .newsletter-area .newsletter-form .subscribe-btn {
   right: auto;
-  left: 3px;
+  left: 34px;
 }
 
 .footer-widget .social-link ul li {

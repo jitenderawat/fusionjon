@@ -18,6 +18,11 @@ use App\Http\Controllers\BlogController;
 use App\Http\Controllers\BlogdetailController;
 use App\Http\Controllers\BlogdetailsController;
 use App\Http\Controllers\BlogdetailsnewController;
+use App\Http\Controllers\ServicedetailstwoController;
+use App\Http\Controllers\ServicedetailsthreeController;
+use App\Http\Controllers\ServicedetailsfourController;
+use App\Http\Controllers\ServicedetailsfiveController;
+use App\Http\Controllers\ServicedetailssixController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -49,8 +54,18 @@ Route::get('/faq', [FaqController::class, 'index'])->name('faq');
 Route::get('/case-study', [CasestudyController::class, 'index'])->name('case');
 Route::get('/case-details', [CasedetailsController::class, 'index'])->name('casedetails');
 Route::get('/404', [ErrorController::class, 'index'])->name('error');
+
+
 Route::get('/service', [ServiceController::class, 'index'])->name('service');
 Route::get('/service-details', [ServicedetailController::class, 'index'])->name('servicedetails');
+Route::get('/servicedetails-two', [ServicedetailstwoController::class, 'index'])->name('servicedatailstwo');
+Route::get('/servicedetails-three', [ServicedetailsthreeController::class, 'index'])->name('servicedatailsthree');
+Route::get('/servicedetails-four', [ServicedetailsfourController::class, 'index'])->name('servicedatailsfour');
+Route::get('/servicedetails-five', [ServicedetailsfiveController::class, 'index'])->name('servicedatailsfive');
+Route::get('/servicedetails-six', [ServicedetailssixController::class, 'index'])->name('servicedatailssix');
+
+
+
 Route::get('/blog', [BlogController::class, 'index'])->name('blog');
 Route::get('/blog-details', [BlogdetailController::class, 'index'])->name('blogdetails');
 Route::get('/blogs', [BlogdetailsController::class, 'index'])->name('blogdetails2');

@@ -171,23 +171,11 @@
                                 </li>
 
                                 <li class="nav-item">
-                                    <a href="#" class="nav-link">
+                                    <a href="{{route('service')}}" class="nav-link">
                                         Services 
-                                        <i class='bx bx-caret-down'></i>
-                                    </a>
-                                    <ul class="dropdown-menu">
-                                        <li class="nav-item">
-                                            <a href="{{route('service')}}" class="nav-link">
-                                                Services Style One 
-                                            </a>
-                                        </li>
                                        
-                                        <li class="nav-item">
-                                            <a href="{{route('servicedetails')}}" class="nav-link">
-                                                Service Details 
-                                            </a>
-                                        </li>
-                                    </ul>
+                                    </a>
+                                   
                                 </li>
                                 <li class="nav-item">
 
@@ -374,25 +362,25 @@
 
                     <div class="col-lg-4 col-md-6">
                         <div class="services-item">
-                            <a href="service-details.html">
+                            <a href="{{route('servicedatailstwo')}}">
                                 <img src="assets/images/services/web.jpg" alt="Images">
                             </a>
                             <div class="content">
                                 <i class="flaticon-web-development"></i>
-                                <span><a href="service-details.html">Web Services</a></span>
-                                <h3><a href="service-details.html">Web Development</a></h3>
+                                <span><a href="{{route('servicedatailstwo')}}">Web Services</a></span>
+                                <h3><a href="{{route('servicedatailstwo')}}">Web Development</a></h3>
                             </div>
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-6">
                         <div class="services-item">
-                            <a href="service-details.html">
+                            <a href="{{route('servicedatailsthree')}}">
                                 <img src="assets/images/services/app.jpg" alt="Images">
                             </a>
                             <div class="content">
                                 <i class="flaticon-consulting"></i>
-                                <span><a href="service-details.html">App Services</a></span>
-                                <h3><a href="service-details.html">Application Development</a></h3>
+                                <span><a href="{{route('servicedatailsthree')}}">App Services</a></span>
+                                <h3><a href="{{route('servicedatailsthree')}}">Application Development</a></h3>
                             </div>
                         </div>
                     </div>
@@ -401,39 +389,39 @@
 
                     <div class="col-lg-4 col-md-6">
                         <div class="services-item">
-                            <a href="service-details.html">
+                            <a href="{{route('servicedatailsfour')}}">
                                 <img src="assets/images/services/digital.jpg" alt="Images">
                             </a>
                             <div class="content">
                                 <i class="flaticon-stats"></i>
-                                <span><a href="service-details.html">Digital Services</a></span>
-                                <h3><a href="service-details.html">Digital Marketing</a></h3>
+                                <span><a href="{{route('servicedatailsfour')}}">Digital Services</a></span>
+                                <h3><a href="{{route('servicedatailsfour')}}">Digital Marketing</a></h3>
                             </div>
                         </div>
                     </div>
 
                     <div class="col-lg-4 col-md-6">
                         <div class="services-item">
-                            <a href="service-details.html">
+                            <a href="{{route('servicedatailsfive')}}">
                                 <img src="assets/images/services/software.jpg" alt="Images">
                             </a>
                             <div class="content">
                                 <i class="flaticon-structure"></i>
-                                <span><a href="service-details.html">Software Services</a></span>
-                                <h3><a href="service-details.html">Software Development</a></h3>
+                                <span><a href="{{route('servicedatailsfive')}}">Software Services</a></span>
+                                <h3><a href="{{route('servicedatailsfive')}}">Software Development</a></h3>
                             </div>
                         </div>
                     </div>
 
                     <div class="col-lg-4 col-md-6">
                         <div class="services-item">
-                            <a href="service-details.html">
+                            <a href="{{route('servicedatailssix')}}">
                                 <img src="assets/images/services/iot.jpg" alt="Images">
                             </a>
                             <div class="content">
                                 <i class="flaticon-data-analytics"></i>
-                                <span><a href="service-details.html">Smart Devices</a></span>
-                                <h3><a href="service-details.html">IOT Devices</a></h3>
+                                <span><a href="{{route('servicedatailssix')}}">Smart Devices</a></span>
+                                <h3><a href="{{route('servicedatailssix')}}">IOT Devices</a></h3>
                             </div>
                         </div>
                     </div>
@@ -511,81 +499,6 @@
         </section>
         <!-- Work Process Area Two End -->
 
-        <!-- Clients Area -->
-        <section class="clients-area pt-100 pb-70">
-            <div class="container">
-                <div class="section-title text-center">
-                    <span class="sp-color2">Our Clients</span>
-                    <h2>Our Clients Feedback</h2>
-                </div>
-
-                <div class="clients-slider owl-carousel owl-theme pt-45">
-                    <div class="clients-content clients-content-color">
-                        <div class="content">
-                            <img src="assets/images/clients-img/clients-img1.jpg" alt="Images">
-                            <i class='bx bxs-quote-alt-left'></i>
-                            <h3>Jonthon Martin</h3>
-                            <span>App Developer</span>
-                        </div>
-                        <p>
-                            “Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis.
-                            sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi loren accumsan ipsum velit.”
-                        </p>
-                    </div>
-
-                    <div class="clients-content clients-content-color">
-                        <div class="content">
-                            <img src="assets/images/clients-img/clients-img2.jpg" alt="Images">
-                            <i class='bx bxs-quote-alt-left'></i>
-                            <h3>Alin Decros</h3>
-                            <span>Graphic Designer</span>
-                        </div>
-                        <p>
-                            “Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis.
-                            sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi loren accumsan ipsum velit.”
-                        </p>
-                    </div>
-
-                    <div class="clients-content clients-content-color">
-                        <div class="content">
-                            <img src="assets/images/clients-img/clients-img3.jpg" alt="Images">
-                            <i class='bx bxs-quote-alt-left'></i>
-                            <h3>Elen Musk</h3>
-                            <span>Web Developer</span>
-                        </div>
-                        <p>
-                            “Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis.
-                            sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi loren accumsan ipsum velit.”
-                        </p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="client-circle">
-                <div class="client-circle-1">
-                    <div class="circle"></div>
-                </div>
-                <div class="client-circle-2">
-                    <div class="circle"></div>
-                </div>
-                <div class="client-circle-3">
-                    <div class="circle"></div>
-                </div>
-                <div class="client-circle-4">
-                    <div class="circle"></div>
-                </div>
-                <div class="client-circle-5">
-                    <div class="circle"></div>
-                </div>
-                <div class="client-circle-6">
-                    <div class="circle"></div>
-                </div>
-                <div class="client-circle-7">
-                    <div class="circle"></div>
-                </div>
-            </div>
-        </section>
-        <!-- Clients Area End -->
 
 <div style="height: 50px"></div>
 
@@ -729,7 +642,7 @@
                                     <img src="assets/images/blog/blognew.jpg" alt="Blog Images">
                                 </a>
                                 <a href="{{route('blogdetails3')}}" class="blog-tag">
-                                    It Services
+                                    Website Services
                                 </a>
                             </div>
                             <div class="content">
@@ -769,100 +682,111 @@
                                 </p>
                                 <div class="footer-call-content">
                                     <h3>Talk to Our Support</h3>
-                                    <span><a href="tel:+1002-123-4567">+1 002-123-4567</a></span>
+                                    <span><a href="tel:+1002-123-4567">011-45696408</a></span>
                                     <i class='bx bx-headphone'></i>
                                 </div>
                             </div>
                         </div>
 
-                        <div class="col-lg-2 col-sm-6">
+                        <div class="col-lg-2 col-sm-6" style="position: relative;
+                        left: 150px; margin-top: 4px">
                             <div class="footer-widget pl-2">
-                                <h3>Services</h3>
-                                <ul class="footer-list">
+                                <h3 style="text-align: center">Services</h3>
+                                <ul class="footer-list" style="text-align: center">
                                     <li>
-                                        <a href="service-details.html" target="_blank">
+                                        <a href="{{route('servicedetails')}}" target="_blank">
                                             <i class='bx bx-chevron-right'></i>
                                             IT Consultancy
                                         </a>
                                     </li> 
                                     <li>
-                                        <a href="service-details.html" target="_blank">
+                                        <a href="{{route('servicedatailstwo')}}" target="_blank" style="    position: relative;
+                                        left: 7px;">
                                             <i class='bx bx-chevron-right'></i>
                                             Business Solution 
                                         </a>
                                     </li> 
                                     <li>
-                                        <a href="service-details.html" target="_blank">
+                                        <a href="{{route('servicedatailsthree')}}" target="_blank" style="    position: relative;
+                                        left: 0px;">
                                             <i class='bx bx-chevron-right'></i>
                                             Digital Services  
                                         </a>
                                     </li> 
                                     <li>
-                                        <a href="compare.html" target="_blank">
+                                        <a href="{{route('servicedatailsfour')}}" target="_blank" style="    position: relative;
+                                        left: 3px;">
                                             <i class='bx bx-chevron-right'></i>
                                             Business Reform   
                                         </a>
                                     </li> 
                                     <li>
-                                        <a href="service-details.html" target="_blank">
+                                        <a href="{{route('servicedatailsfive')}}" target="_blank" style="    position: relative;
+                                        left: 7px;">
                                             <i class='bx bx-chevron-right'></i>
                                             Web Development      
                                         </a>
                                     </li> 
                                     <li>
-                                        <a href="service-details.html" target="_blank">
+                                        <a href="{{route('servicedatailssix')}}" target="_blank" style="    position: relative;
+                                        left: 4px;">
                                             <i class='bx bx-chevron-right'></i>
                                             Cloud Computing      
                                         </a>
                                     </li> 
-                                    <li>
-                                        <a href="service-details.html" target="_blank">
-                                            <i class='bx bx-chevron-right'></i>
-                                            Data Analysis      
-                                        </a>
-                                    </li> 
+                                   
                                 </ul>
                             </div>
                         </div>
 
-                        <div class="col-lg-3 col-sm-6">
-                            <div class="footer-widget pl-5">
-                                <h3>Our Blog</h3>
-                                 <ul class="footer-blog">
+                      
+
+                        <div class="col-lg-3 col-sm-6" style="margin-left: 280px; margin-top: 4px">
+                            <div class="footer-widget" style="text-align: center">
+                                <h2 style="text-align: center; color: white; font-size: 40px;     position: relative;
+                                left: 19px;">Contact Us</h2>
+                                <ul style="padding-right: 0rem ">
                                     <li>
-                                        
-                                        <div class="content">
-                                            <h3><a href="{{route('blogdetails')}}">Importance of information technology in today's business landscape</a></h3>
-                                            <span>04 Dec 2020</span>
+
+                                        <div class="content" style="margin-top: 30px">
+                                            <i class='bx bxs-map'  style="position: relative;
+                                           top: 2px;
+                                           right: 20px;
+                                            color: cyan"></i>
+                                           
+                                            <span style="color: white">E- 31 A, Fourth Floor, Jawahar Park, Near Hira Sweets, Laxmi Nagar, Delhi - 110092</span>
                                         </div>
                                     </li>
 
                                     <li>
-                                       
-                                        <div class="content">
-                                            <h3><a href="{{route('blogdetails2')}}">Innovation in the digital platform</a></h3>
-                                            <span>07 Dec 2020</span>
+
+                                        <div class="content" style="margin-top: -9px">
+                                            <i class='bx bx-phone-call'   style="position: relative;
+                                            right: 16px;
+                                            top: 1px;
+                                            color: cyan; "></i>
+                                            
+                                            <a href="tel:+1(212)-255-5511" style="color: white; margin-top: 42px;">011-45696408 / 9810358257 </a>
                                         </div>
                                     </li>
-
+    
+                                    
+    
                                     <li>
-                                        
+
                                         <div class="content">
-                                            <h3><a href="{{route('blogdetails3')}}">How to improve your website SEO?</a></h3>
-                                            <span>10 Dec 2020</span>
+                                            <i class='bx bx-message'  style="position: relative;
+                                            right: 20px;
+                                            top: 5px;
+                                            color: cyan;"></i>
+                                           
+                                            <a href="mailto:hello@techex.com" style="color: white; margin-top: 42px;">support@fusionjon.com</a>
                                         </div>
                                     </li>
                                 </ul>
-                            </div>
-                        </div>
-
-
-                        <div class="col-lg-3 col-sm-6">
-                            <div class="footer-widget">
-                                <h3>Newsletter</h3>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum finibus molestie molestie. Phasellus ac rutrum massa, et volutpat nisl. Fusce ultrices suscipit nisl.</p>
+                                
                                 <div class="newsletter-area">
-                                    <form class="newsletter-form" data-toggle="validator" method="POST">
+                                    <form class="newsletter-form" data-toggle="validator" method="POST" style="margin-top: 20px">
                                         <input type="email" class="form-control" placeholder="Enter Your Email" name="EMAIL" required autocomplete="off">
                                         <button class="subscribe-btn" type="submit">
                                             <i class='bx bx-paper-plane'></i>
@@ -878,8 +802,8 @@
                 <div class="copy-right-area">
                     <div class="copy-right-text">
                         <p>
-                            Copyright © <script>document.write(new Date().getFullYear())</script> Techex. All Rights Reserved by 
-                            <a href="https://hibootstrap.com/" target="_blank">HiBootstrap</a> 
+                            Copyright © <script>document.write(new Date().getFullYear())</script>. All Rights Reserved by 
+                            <a href="{{route('home')}}" target="_blank">FJ Tech</a> 
                         </p>
                     </div>
                 </div>

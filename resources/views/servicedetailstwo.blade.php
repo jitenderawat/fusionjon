@@ -84,7 +84,7 @@
                     <div class="col-lg-7 col-md-6">
                         <div class="top-head-left">
                             <div class="top-contact">
-                                <h3>Support By : <a href="tel:+1(212)-255-5511">+1 (212) 255-5511</a></h3>
+                                <h3>Support By : <a href="tel:+1(212)-255-5511">011-45696408</a></h3>
                             </div>
                         </div>
                     </div>
@@ -95,98 +95,86 @@
 
         <!-- Start Navbar Area -->
         <div class="navbar-area">
+          
+           
             <!-- Menu For Mobile Device -->
-            <div class="mobile-nav">
-                <img src="assets/images/logos/image.png" class="logo-one" alt="Logo">
-                </a>
-            </div>
+      <div class="mobile-nav">
+          <img src="assets/images/logos/image.png" class="logo-one" alt="Logo">
+          </a>
+      </div>
 
-            <!-- Menu For Desktop Device -->
-            <div class="main-nav">
-                <div class="container">
-                    <nav class="navbar navbar-expand-md navbar-light ">
-                       <a class="navbar-brand" style="margin-left: -11rem" href="">
-                            <img src="assets/images/logos/image.png" class="logo-one" alt="Logo">
-                            
-                        </a>
+      <!-- Menu For Desktop Device -->
+      <div class="main-nav">
+          <div class="container">
+              <nav class="navbar navbar-expand-md navbar-light ">
+                 <a class="navbar-brand" href="">
+                      <img src="assets/images/logos/image.png" class="logo-one" alt="Logo"> 
+                  </a>
 
-                        <div class="collapse navbar-collapse mean-menu" id="navbarSupportedContent">
-                            <ul class="navbar-nav m-auto">
-                                <li class="nav-item">
-                                    <a href="{{route('home')}}">
-                                        Home 
-                                       
-                                    </a>
+                  <div class="collapse navbar-collapse mean-menu" id="navbarSupportedContent">
+                      <ul class="navbar-nav m-auto">
+                          <li class="nav-item">
+                              <a href="{{route('home')}}">
+                                  Home 
+                                 
+                              </a>
 
-                                </li>
-                                <li class="nav-item">
-                                    <a href="{{ route('about')}}" class="nav-link">
-                                        About
-                                    </a>
-                                </li>
-                                <li class="nav-item">
-                                    <a href="" class="nav-link">
-                                        Pages 
-                                        <i class='bx bx-caret-down'></i>
-                                    </a>
-                                    <ul class="dropdown-menu">
-                                        <li class="nav-item">
-                                            <a href="{{route('team')}}" class="nav-link">
-                                                Team
-                                            </a>
-                                        </li>
+                          </li>
+                          <li class="nav-item">
+                              <a href="{{ route('about')}}" class="nav-link">
+                                  About
+                              </a>
+                          </li>
+                          <li class="nav-item">
+                              <a href="#" class="nav-link">
+                                  Pages 
+                                  <i class='bx bx-caret-down'></i>
+                              </a>
+                              <ul class="dropdown-menu">
+                                  <li class="nav-item">
+                                      <a href="{{route('team')}}" class="nav-link">
+                                          Team
+                                      </a>
+                                  </li>
 
-                                        <li class="nav-item">
-                                            <a href="{{route('testinomial')}}" class="nav-link">
-                                                Testimonials
-                                            </a>
-                                        </li>
+                                  <li class="nav-item">
+                                      <a href="{{route('testinomial')}}" class="nav-link">
+                                          Testimonials
+                                      </a>
+                                  </li>
 
-                                        <li class="nav-item">
-                                            <a href="{{route('faq')}}" class="nav-link">
-                                                FAQ
-                                            </a>
-                                        </li>
+                                  <li class="nav-item">
+                                      <a href="{{route('faq')}}" class="nav-link">
+                                          FAQ
+                                      </a>
+                                  </li>
+                                  
 
-                                       
-                                       
 
-                                        <li class="nav-item">
-                                            <a href="{{ route('terms')}}" class="nav-link">
-                                                Terms & Conditions
-                                            </a>
-                                        </li>
+                                  <li class="nav-item">
+                                      <a href="{{ route('terms')}}" class="nav-link">
+                                          Terms & Conditions
+                                      </a>
+                                  </li>
 
-                                        <li class="nav-item">
-                                            <a href="{{ route('privacy')}}" class="nav-link">
-                                                Privacy Policy
-                                            </a>
-                                        </li>
+                                  <li class="nav-item">
+                                      <a href="{{ route('privacy')}}" class="nav-link">
+                                          Privacy Policy
+                                      </a>
+                                  </li>
 
-                                       
-                                    </ul>
-                                </li>
+                                 
+                              </ul>
+                          </li>
 
-                                <li class="nav-item">
-                                    <a href="" class="nav-link">
-                                        Services 
-                                        <i class='bx bx-caret-down'></i>
-                                    </a>
-                                    <ul class="dropdown-menu">
-                                        <li class="nav-item">
-                                            <a href="{{route('service')}}" class="nav-link">
-                                                Services Style One 
-                                            </a>
-                                        </li>
-                                       
-                                        <li class="nav-item">
-                                            <a href="{{route('servicedetails')}}" class="nav-link">
-                                                Service Details 
-                                            </a>
-                                        </li>
-                                    </ul>
-                                </li>
-                                <li class="nav-item">
+                          <li class="nav-item">
+                            <a href="{{route('service')}}" class="nav-link">
+                                Services 
+                               
+                            </a>
+                           
+                        </li>
+                          <li class="nav-item">
                                     
                                     <a href="{{route('blog')}}" class="nav-link">
                                         Blog
@@ -194,60 +182,59 @@
                                     </a>
                                    
                                 </li>
-        
 
-                                <li class="nav-item">
-                                    <a href="{{route('contact')}}" class="nav-link">
-                                        Contact
-                                    </a>
-                                </li>
-                            </ul>
+                          <li class="nav-item">
+                              <a href="{{route('contact')}}" class="nav-link">
+                                  Contact
+                              </a>
+                          </li>
+                      </ul>
 
-                            <div class="nav-side d-display">
-                                <div class="nav-side-item">
-                                    <div class="search-box">
-                                        <i class='bx bx-search'></i>
-                                    </div>
-                                </div>
+                      <div class="nav-side d-display">
+                          <div class="nav-side-item">
+                              <div class="search-box">
+                                  <i class='bx bx-search'></i>
+                              </div>
+                          </div>
 
-                                <div class="nav-side-item">
-                                    <div class="get-btn">
-                                        <a href="{{route('contact')}}" class="default-btn btn-bg-two border-radius-50">Get A Quote <i class='bx bx-chevron-right'></i></a>
-                                    </div>	
-                                </div>
-                            </div>
-                        </div>
-                    </nav>
-                </div>
-            </div>
+                          <div class="nav-side-item">
+                              <div class="get-btn">
+                                  <a href="{{route('contact')}}" class="default-btn btn-bg-two border-radius-50">Get A Quote <i class='bx bx-chevron-right'></i></a>
+                              </div>	
+                          </div>
+                      </div>
+                  </div>
+              </nav>
+          </div>
+      </div>
 
-           <div class="side-nav-responsive">
-                <div class="container-max">
-                    <div class="dot-menu">
-                        <div class="circle-inner">
-                            <div class="in-circle circle-one"></div>
-                            <div class="in-circle circle-two"></div>
-                            <div class="in-circle circle-three"></div>
-                        </div>
-                    </div>
-                    
-                    <div class="container">
-                        <div class="side-nav-inner">
-                            <div class="side-nav justify-content-center align-items-center">
-                                <div class="side-nav-item nav-side">
-                                    <div class="search-box">
-                                        <i class='bx bx-search'></i>
-                                    </div>
-                                    <div class="get-btn">
-                                        <a href="{{route('contact')}}" class="default-btn btn-bg-two border-radius-50">Get A Quote <i class='bx bx-chevron-right'></i></a>
-                                    </div>	
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+      <div class="side-nav-responsive">
+          <div class="container-max">
+              <div class="dot-menu">
+                  <div class="circle-inner">
+                      <div class="in-circle circle-one"></div>
+                      <div class="in-circle circle-two"></div>
+                      <div class="in-circle circle-three"></div>
+                  </div>
+              </div>
+              
+              <div class="container">
+                  <div class="side-nav-inner">
+                      <div class="side-nav justify-content-center align-items-center">
+                          <div class="side-nav-item nav-side">
+                              <div class="search-box">
+                                  <i class='bx bx-search'></i>
+                              </div>
+                              <div class="get-btn">
+                                  <a href="{{route('contact')}}" class="default-btn btn-bg-two border-radius-50">Get A Quote <i class='bx bx-chevron-right'></i></a>
+                              </div>	
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
         <!-- End Navbar Area -->
 
         <!-- Search Overlay -->
@@ -278,7 +265,7 @@
         <div class="inner-banner">
             <div class="container">
                 <div class="inner-title text-center">
-                    <h3>Case Study Details</h3>
+                    <h3>Service Details</h3>
                     <ul>
                         <li>
                             <a href="{{route('home')}}">Home</a>
@@ -286,7 +273,7 @@
                         <li>
                             <i class='bx bx-chevrons-right'></i>
                         </li>
-                        <li>Case Study Details</li>
+                        <li>Service Details</li>
                     </ul>
                 </div>
             </div>
@@ -296,17 +283,17 @@
         </div>
         <!-- Inner Banner End -->
 
-        <!-- Case Details Area -->
-        <div class="case-details-area pt-100 pb-70">
+        <!-- Service Details Area -->
+        <div class="service-details-area pt-100 pb-70">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-8">
-                        <div class="case-article">
-                            <div class="case-article-img">
-                               <img src="assets/images/case-study/case-details.jpg" alt="Images">
+                        <div class="service-article">
+                            <div class="service-article-img">
+                               <img src="assets/images/services/service-details.jpg" alt="Images">
                             </div>
-                            <div class="case-article-content">
-                                <h2>Web Development</h2>
+                            <div class="service-article-content">
+                                <h2>Cloud Computing</h2>
                                 <p>
                                     Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. cu 
                                     sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies ne, 
@@ -318,7 +305,7 @@
 
                                 <div class="row">
                                     <div class="col-lg-6 col-md-6">
-                                        <ul class="case-article-list case-article-rs case-article-ls">
+                                        <ul class="service-article-list service-article-rs">
                                             <li><i class='bx bxs-check-circle'></i>Cost of Supplies and Equipment</li>
                                             <li><i class='bx bxs-check-circle'></i>Bribed Autor Nisi Elit Volume</li>
                                             <li><i class='bx bxs-check-circle'></i>Cost of Supplies and Equipment</li>
@@ -326,7 +313,7 @@
                                     </div>
     
                                     <div class="col-lg-6 col-md-6">
-                                        <ul class="case-article-list case-article-ls">
+                                        <ul class="service-article-list">
                                             <li><i class='bx bxs-check-circle'></i>Change the Volume of Expected</li>
                                             <li><i class='bx bxs-check-circle'></i>Easy to Customer Services</li>
                                             <li><i class='bx bxs-check-circle'></i>Good Quality Products Services</li>
@@ -344,11 +331,7 @@
                                 </p>
                             </div>
 
-                            <div class="case-play-btn">
-                                <a href="https://www.youtube.com/watch?v=tUP5S4YdEJo" class="case-play popup-btn"><i class='bx bx-play'></i></a>
-                            </div>
-
-                            <div class="case-article-another">
+                            <div class="service-article-another">
                                 <h2>What Benefit You Will Get</h2>
                                 <p>
                                     Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. cu 
@@ -360,13 +343,13 @@
                                 </p>
                                 <div class="row">
                                     <div class="col-lg-6 col-sm-6">
-                                        <div class="case-article-another-img">
-                                            <img src="assets/images/case-study/case-study1.jpg" alt="Images">
+                                        <div class="service-article-another-img">
+                                            <img src="assets/images/services/service-details-img1.jpg" alt="Images">
                                         </div>
                                     </div>
                                     <div class="col-lg-6 col-sm-6">
-                                        <div class="case-article-another-img">
-                                            <img src="assets/images/case-study/case-study5.jpg" alt="Images">
+                                        <div class="service-article-another-img">
+                                            <img src="assets/images/services/service-details-img2.jpg" alt="Images">
                                         </div>
                                     </div>
                                 </div>
@@ -378,7 +361,7 @@
                                 </p>
                             </div>
 
-                            <div class="case-work-process">
+                            <div class="service-work-process">
                                 <h2>Our Working Proccess</h2>
                                 <p>
                                     Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. cu 
@@ -395,112 +378,112 @@
                     <div class="col-lg-4">
                         <div class="side-bar-area">
                             <div class="side-bar-widget">
-                                <h3 class="title">Recent Project</h3>
+                                <h3 class="title">Our Services</h3>
                                 <div class="side-bar-categories">
                                     <ul>
                                         <li>
                                             <div class="line-circle"></div>
-                                            <a href="case-details.html" target="_blank">Web Development</a>
+                                            <a href="" target="_blank">IT Services</a>
                                         </li>
                                         <li>
                                             <div class="line-circle"></div>
-                                            <a href="case-details.html" target="_blank">Social Media App</a>  
+                                            <a href="" target="_blank">Cloud Computing</a>  
                                         </li>
                                         <li>
                                             <div class="line-circle"></div>
-                                            <a href="case-details.html" target="_blank">UI/UX Research</a>
+                                            <a href="" target="_blank">Web Development</a>
                                         </li>
                                         <li>
                                             <div class="line-circle"></div>
-                                            <a href="case-details.html" target="_blank">Business Reform</a>
+                                            <a href="" target="_blank">Business Reform</a>
                                         </li>
                                         <li>
                                             <div class="line-circle"></div>
-                                            <a href="case-details.html" target="_blank">Consulting </a>
+                                            <a href="" target="_blank">Infrastructure</a>
                                         </li>
                                         <li>
                                             <div class="line-circle"></div>
-                                            <a href="case-details.html" target="_blank">Data Analysis</a>
+                                            <a href="" target="_blank">Data Analysis</a>
                                         </li>
                                     </ul>
                                 </div>
                             </div>
 
-                            <div class="side-bar-widget">
+                            <div class="side-bar-widget" style="margin-top: 180px">
                                 <h3 class="title">Tag Cloud</h3>
                                 <ul class="side-bar-widget-tag">
-                                    <li><a href="case-details.html" target="_blank">Android</a></li>
-                                    <li><a href="case-details.html" target="_blank">Creative</a></li>
-                                    <li><a href="case-details.html" target="_blank">App</a></li>
-                                    <li><a href="case-details.html" target="_blank">IOS</a></li>
-                                    <li><a href="case-details.html" target="_blank">Business</a></li>
-                                    <li><a href="case-details.html" target="_blank">Consulting</a></li>
+                                    <li><a href="" target="_blank">Android</a></li>
+                                    <li><a href="" target="_blank">Creative</a></li>
+                                    <li><a href="" target="_blank">App</a></li>
+                                    <li><a href="" target="_blank">IOS</a></li>
+                                    <li><a href="" target="_blank">Business</a></li>
+                                    <li><a href="" target="_blank">Consulting</a></li>
                                 </ul>
                             </div>
 
-                            <div class="side-bar-widget">
+                            <div class="side-bar-widget"  style="margin-top: 100px">
                                 <h3 class="title">Gallery</h3>
                                 <ul class="blog-gallery">
                                     <li>
-                                        <a href="https://www.instagram.com/" target="_blank">
+                                        <a href="" target="_blank">
                                             <img src="assets/images/blog/blog-small-img1.jpg" alt="image">
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="https://www.instagram.com/" target="_blank">
+                                        <a href="" target="_blank">
                                             <img src="assets/images/blog/blog-small-img2.jpg" alt="image">
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="https://www.instagram.com/" target="_blank">
+                                        <a href="" target="_blank">
                                             <img src="assets/images/blog/blog-small-img3.jpg" alt="image">
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="https://www.instagram.com/" target="_blank">
+                                        <a href="" target="_blank">
                                             <img src="assets/images/blog/blog-small-img4.jpg" alt="image">
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="https://www.instagram.com/" target="_blank">
+                                        <a href="" target="_blank">
                                             <img src="assets/images/blog/blog-small-img5.jpg" alt="image">
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="https://www.instagram.com/" target="_blank">
+                                        <a href="" target="_blank">
                                             <img src="assets/images/blog/blog-small-img6.jpg" alt="image">
                                         </a>
                                     </li>
                                 </ul>
                             </div>
 
-                            <div class="side-bar-widget">
+                            <div class="side-bar-widget"  style="margin-top: 100px">
                                 <h3 class="title">Archive</h3>
                                 <div class="side-bar-categories">
                                     <ul>
                                         <li>
                                             <div class="line-circle"></div>
-                                            <a href="case-details.html" target="_blank">Design<span>[70]</span></a>
+                                            <a href="{{route('servicedetails')}}" target="_blank">Design</a>
                                         </li>
                                         <li>
                                             <div class="line-circle"></div>
-                                            <a href="case-details.html" target="_blank">Business<span>[24]</span></a>  
+                                            <a href="{{route('servicedetails')}}" target="_blank">Business</a>  
                                         </li>
                                         <li>
                                             <div class="line-circle"></div>
-                                            <a href="case-details.html" target="_blank">Development<span>[08]</span></a>
+                                            <a href="{{route('servicedetails')}}" target="_blank">Development</a>
                                         </li>
                                         <li>
                                             <div class="line-circle"></div>
-                                            <a href="case-details.html" target="_blank">Technology <span>[17]</span></a>
+                                            <a href="{{route('servicedetails')}}" target="_blank">Technology </a>
                                         </li>
                                         <li>
                                             <div class="line-circle"></div>
-                                            <a href="case-details.html" target="_blank">Startup <span>[20]</span></a>
+                                            <a href="{{route('servicedetails')}}" target="_blank">Startup </a>
                                         </li>
                                         <li>
                                             <div class="line-circle"></div>
-                                            <a href="case-details.html" target="_blank">Marketing Growth <span>[13]</span></a>
+                                            <a href="{{route('servicedetails')}}" target="_blank">Marketing Growth </a>
                                         </li>
                                     </ul>
                                 </div>
@@ -510,7 +493,7 @@
                 </div>
             </div>
         </div>
-        <!-- Case Details Area End -->
+        <!-- Service Details Area End -->
 
         <!-- Footer Area End -->
         <footer class="footer-area footer-bg">

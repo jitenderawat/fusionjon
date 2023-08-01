@@ -6198,7 +6198,7 @@ Map Area End
 
 .footer-widget h3 {
   margin-top: 0;
-  font-size: 24px;
+  font-size: 40px;
   margin-bottom: 30px;
   color: #ffffff;
   line-height: 1.2;
@@ -6359,6 +6359,8 @@ Map Area End
   max-width: 100%;
   color: #252525;
   font-weight: 400;
+  position: relative;
+  left: 32px;
 }
 
 .footer-widget .newsletter-area .newsletter-form .form-control:focus {

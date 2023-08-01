@@ -168,25 +168,15 @@
                               </ul>
                           </li>
 
-                          <li class="nav-item">
-                              <a href="" class="nav-link">
-                                  Services 
-                                  <i class='bx bx-caret-down'></i>
-                              </a>
-                              <ul class="dropdown-menu">
-                                  <li class="nav-item">
-                                      <a href="{{route('service')}}" class="nav-link">
-                                          Services Style One 
-                                      </a>
-                                  </li>
-                                 
-                                  <li class="nav-item">
-                                      <a href="{{route('servicedetails')}}" class="nav-link">
-                                          Service Details 
-                                      </a>
-                                  </li>
-                              </ul>
-                          </li>
+
+                           <li class="nav-item">
+                            <a href="{{route('service')}}" class="nav-link">
+                                Services 
+                          
+                                
+                            </a>
+                           
+                           </li>
                          
                           <li class="nav-item">
                                     
@@ -280,7 +270,7 @@
         <div class="inner-banner">
             <div class="container">
                 <div class="inner-title text-center">
-                    <h3>Blog Style One </h3>
+                    <h3>Blogs</h3>
                     <ul>
                         <li>
                             <a href="{{route('home')}}">Home</a>
@@ -288,7 +278,7 @@
                         <li>
                             <i class='bx bx-chevrons-right'></i>
                         </li>
-                        <li>Blog Style One</li>
+                        <li>Blogs</li>
                     </ul>
                 </div>
             </div>
@@ -311,8 +301,8 @@
                                             <img src="assets/images/blog/bimage-1.jpg" alt="Images">
                                         </a>
                                         <div class="blog-style-tag">
-                                            <h3>04</h3>
-                                            <span>Nov</span>
+                                            <h3>01</h3>
+                                            <span>Aug</span>
                                         </div>
                                    </div>
 
@@ -320,7 +310,7 @@
                                         <ul>
                                             <li><i class='bx bxs-user'></i> By Admin</li>
                                             <li><i class='bx bx-show-alt'></i>322 View</li>
-                                            <li><i class='bx bx-purchase-tag-alt'></i>Business</li>
+                                            <li><i class='bx bx-purchase-tag-alt'></i>Consultancy</li>
                                         </ul>
                                         <h3><a href="{{route('blogdetails')}}">Importance of information technology in today's business landscape</a></h3>
                                         <p>Implementing automation and digital tools for efficient business processes, tracking inventory, sales, and customer data.</p>
@@ -336,8 +326,8 @@
                                             <img src="assets/images/blog/bimage-2.jpg" alt="Images">
                                         </a>
                                         <div class="blog-style-tag">
-                                            <h3>06</h3>
-                                            <span>Nov</span>
+                                            <h3>01</h3>
+                                            <span>July</span>
                                         </div>
                                    </div>
 
@@ -361,8 +351,8 @@
                                             <img src="assets/images/blog/bimage-3.jpg" alt="Images">
                                         </a>
                                         <div class="blog-style-tag">
-                                            <h3>06</h3>
-                                            <span>Nov</span>
+                                            <h3>01</h3>
+                                            <span>June</span>
                                         </div>
                                    </div>
 
@@ -370,7 +360,7 @@
                                         <ul>
                                             <li><i class='bx bxs-user'></i> By Admin</li>
                                             <li><i class='bx bx-show-alt'></i>322 View</li>
-                                            <li><i class='bx bx-purchase-tag-alt'></i>Digital</li>
+                                            <li><i class='bx bx-purchase-tag-alt'></i>SEO</li>
                                         </ul>
                                         <h3><a href="{{route('blogdetails3')}}">How to improve your website SEO?</a></h3>
                                         <p>Keyword research is crucial for selecting the right keywords, while on-page SEO optimization involves optimizing meta tags, title tags, URLs, and content. Off-page SEO involves building backlinks, guest blogging, and influencer outreach.</p>
@@ -392,165 +382,56 @@
                                 </form>
                             </div>
 
-                            <div class="side-bar-widget">
+                            <div class="side-bar-widget" style="margin-top: 127px">
                                 <h3 class="title">Blog Categories</h3>
                                 <div class="side-bar-categories">
                                     <ul>
                                         <li>
                                             <div class="line-circle"></div>
-                                            <a href="">IT Services</a>
+                                            <a href="{{route('blogdetails')}}">IT Services</a>
                                         </li>
                                         <li>
                                             <div class="line-circle"></div>
-                                            <a href="">Busines</a>  
+                                            <a href="{{route('blogdetails2')}}">Digital Services</a>  
                                         </li>
                                         <li>
                                             <div class="line-circle"></div>
-                                            <a href="">Creative Inventio</a>
+                                            <a href="{{route('blogdetails3')}}">Creative Inventio</a>
                                         </li>
-                                        <li>
-                                            <div class="line-circle"></div>
-                                            <a href="">Technology</a>
-                                        </li>
-                                        <li>
-                                            <div class="line-circle"></div>
-                                            <a href="">IT Consulting</a>
-                                        </li>
-                                        <li>
-                                            <div class="line-circle"></div>
-                                            <a href="">Marketing Growth</a>
-                                        </li>
+                                        
                                     </ul>
                                 </div>
                             </div>
 
-                            <div class="side-bar-widget" style="margin-top: 100px">
-                                <h3 class="title">Latest Blog</h3>
-                                <div class="widget-popular-post">
-                                    <article class="item">
-                                        <a href="{{route('blogdetails')}}" target="_blank" class="thumb">
-                                            <span class="full-image cover bg1" role="img"></span>
-                                        </a>
-                                        <div class="info">
-                                            <h4 class="title-text">
-                                                <a href="{{route('blogdetails')}}" target="_blank">
-                                                    Importance of information technology in today's business landscape
-                                                </a>
-                                            </h4>
-                                            <p>Nov 05, 2020</p>
-                                        </div>
-                                    </article>
-    
-                                    <article class="item">
-                                        <a href="{{route('blogdetails2')}}" target="_blank" class="thumb">
-                                            <span class="full-image cover bg2" role="img"></span>
-                                        </a>
-                                        <div class="info">
-                                            <h4 class="title-text">
-                                                <a href="{{route('blogdetails2')}}" target="_blank">
-                                                    Innovation in the digital platform
-                                                </a>
-                                            </h4>
-                                            <p>13 October, 2020</p>
-                                        </div>
-                                    </article>
-    
-                                    <article class="item">
-                                        <a href="{{route('blogdetails3')}}" target="_blank" class="thumb">
-                                            <span class="full-image cover bg3" role="img"></span>
-                                        </a>
-                                        <div class="info">
-                                            <h4 class="title-text">
-                                                <a href="{{route('blogdetails3')}}" target="_blank">
-                                                    How to improve your website SEO?
-                                                </a> 
-                                            </h4>
-                                            <p>17 October, 2020</p>
-                                        </div>
-                                    </article>
 
-                                   
-                                </div>
-                            </div>
-
-                            <div class="side-bar-widget" style="margin-top: 100px;">
+                            <div class="side-bar-widget" style="margin-top: 120px;">
                                 <h3 class="title">Tag Cloud</h3>
                                 <ul class="side-bar-widget-tag">
-                                    <li><a href="">Android</a></li>
-                                    <li><a href="">Creative</a></li>
-                                    <li><a href="">App</a></li>
-                                    <li><a href="">IOS</a></li>
-                                    <li><a href="">Business</a></li>
-                                    <li><a href="">Consulting</a></li>
+                                    <li><a href="{{route('blogdetails')}}">Consultancy</a></li>
+                                    <li><a href="{{route('blogdetails2')}}">Digital</a></li>
+                                    <li><a href="{{route('blogdetails3')}}">SEO</a></li>
+                                  
                                 </ul>
                             </div>
 
-                            <div class="side-bar-widget" style="margin-top: 50px;">
+                            <div class="side-bar-widget" style="margin-top: 100px;">
                                 <h3 class="title">Gallery</h3>
                                 <ul class="blog-gallery">
                                     <li>
                                         <a href="blog-details.html">
-                                            <img src="assets/images/blog/blog-small-img1.jpg" alt="image">
+                                            <img src="assets/images/blog/instaa.png" alt="image">
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="">
-                                            <img src="assets/images/blog/blog-small-img2.jpg" alt="image">
+                                        <a href="https://www.facebook.com/FusionJon7/">
+                                            <img src="assets/images/blog/facebook.png" alt="image">
                                         </a>
                                     </li>
-                                    <li>
-                                        <a href="">
-                                            <img src="assets/images/blog/blog-small-img3.jpg" alt="image">
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="">
-                                            <img src="assets/images/blog/blog-small-img4.jpg" alt="image">
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="">
-                                            <img src="assets/images/blog/blog-small-img5.jpg" alt="image">
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="">
-                                            <img src="assets/images/blog/blog-small-img6.jpg" alt="image">
-                                        </a>
-                                    </li>
+                                   
                                 </ul>
                             </div>
 
-                            <div class="side-bar-widget" style="margin-top: 100px">
-                                <h3 class="title">Archive</h3>
-                                <div class="side-bar-categories">
-                                    <ul>
-                                        <li>
-                                            <div class="line-circle"></div>
-                                            <a href="">Design</a>
-                                        </li>
-                                        <li>
-                                            <div class="line-circle"></div>
-                                            <a href="">Busines</a>  
-                                        </li>
-                                        <li>
-                                            <div class="line-circle"></div>
-                                            <a href="">Developmen</a>
-                                        </li>
-                                        <li>
-                                            <div class="line-circle"></div>
-                                            <a href="">Technology</a>
-                                        </li>
-                                        <li>
-                                            <div class="line-circle"></div>
-                                            <a href="">Startup</a>
-                                        </l>
-                                            <div class="line-circle"></div>
-                                            <a href="">Marketing Growth</a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
+                           
                         </div>
                     </div>
                 </div>
@@ -573,99 +454,111 @@
                                 </p>
                                 <div class="footer-call-content">
                                     <h3>Talk to Our Support</h3>
-                                    <span><a href="tel:+1002-123-4567">+1 002-123-4567</a></span>
+                                    <span><a href="tel:+1002-123-4567">011-45696408</a></span>
                                     <i class='bx bx-headphone'></i>
                                 </div>
                             </div>
                         </div>
 
-                        <div class="col-lg-2 col-sm-6">
+                        <div class="col-lg-2 col-sm-6" style="position: relative;
+                        left: 150px; margin-top: 4px">
                             <div class="footer-widget pl-2">
-                                <h3>Services</h3>
-                                <ul class="footer-list">
+                                <h3 style="text-align: center">Services</h3>
+                                <ul class="footer-list" style="text-align: center">
                                     <li>
-                                        <a href="service-details.html" target="_blank">
+                                        <a href="{{route('servicedetails')}}" target="_blank">
                                             <i class='bx bx-chevron-right'></i>
                                             IT Consultancy
                                         </a>
                                     </li> 
                                     <li>
-                                        <a href="service-details.html" target="_blank">
+                                        <a href="{{route('servicedatailstwo')}}" target="_blank" style="    position: relative;
+                                        left: 7px;">
                                             <i class='bx bx-chevron-right'></i>
                                             Business Solution 
                                         </a>
                                     </li> 
                                     <li>
-                                        <a href="service-details.html" target="_blank">
+                                        <a href="{{route('servicedatailsthree')}}" target="_blank" style="    position: relative;
+                                        left: 0px;">
                                             <i class='bx bx-chevron-right'></i>
                                             Digital Services  
                                         </a>
                                     </li> 
                                     <li>
-                                        <a href="compare.html" target="_blank">
+                                        <a href="{{route('servicedatailsfour')}}" target="_blank" style="    position: relative;
+                                        left: 3px;">
                                             <i class='bx bx-chevron-right'></i>
                                             Business Reform   
                                         </a>
                                     </li> 
                                     <li>
-                                        <a href="service-details.html" target="_blank">
+                                        <a href="{{route('servicedatailsfive')}}" target="_blank" style="    position: relative;
+                                        left: 7px;">
                                             <i class='bx bx-chevron-right'></i>
                                             Web Development      
                                         </a>
                                     </li> 
                                     <li>
-                                        <a href="service-details.html" target="_blank">
+                                        <a href="{{route('servicedatailssix')}}" target="_blank" style="    position: relative;
+                                        left: 4px;">
                                             <i class='bx bx-chevron-right'></i>
                                             Cloud Computing      
                                         </a>
                                     </li> 
-                                    <li>
-                                        <a href="service-details.html" target="_blank">
-                                            <i class='bx bx-chevron-right'></i>
-                                            Data Analysis      
-                                        </a>
-                                    </li> 
+                                   
                                 </ul>
                             </div>
                         </div>
 
-                        <div class="col-lg-3 col-sm-6">
-                            <div class="footer-widget pl-5">
-                                <h3>Our Blog</h3>
-                                 <ul class="footer-blog">
+                      
+
+                        <div class="col-lg-3 col-sm-6" style="margin-left: 280px; margin-top: 4px">
+                            <div class="footer-widget" style="text-align: center">
+                                <h2 style="text-align: center; color: white; font-size: 40px;     position: relative;
+                                left: 19px;">Contact Us</h2>
+                                <ul style="padding-right: 0rem ">
                                     <li>
-                                        
-                                        <div class="content">
-                                            <h3><a href="{{route('blogdetails')}}">Importance of information technology in today's business landscape</a></h3>
-                                            <span>04 Dec 2020</span>
+
+                                        <div class="content" style="margin-top: 30px">
+                                            <i class='bx bxs-map'  style="position: relative;
+                                           top: 2px;
+                                           right: 20px;
+                                            color: cyan"></i>
+                                           
+                                            <span style="color: white">E- 31 A, Fourth Floor, Jawahar Park, Near Hira Sweets, Laxmi Nagar, Delhi - 110092</span>
                                         </div>
                                     </li>
 
                                     <li>
-                                       
-                                        <div class="content">
-                                            <h3><a href="{{route('blogdetails2')}}">Innovation in the digital platform</a></h3>
-                                            <span>07 Dec 2020</span>
+
+                                        <div class="content" style="margin-top: -9px">
+                                            <i class='bx bx-phone-call'   style="position: relative;
+                                            right: 16px;
+                                            top: 1px;
+                                            color: cyan; "></i>
+                                            
+                                            <a href="tel:+1(212)-255-5511" style="color: white; margin-top: 42px;">011-45696408 / 9810358257 </a>
                                         </div>
                                     </li>
-
+    
+                                    
+    
                                     <li>
-                                        
+
                                         <div class="content">
-                                            <h3><a href="{{route('blogdetails3')}}">How to improve your website SEO?</a></h3>
-                                            <span>10 Dec 2020</span>
+                                            <i class='bx bx-message'  style="position: relative;
+                                            right: 20px;
+                                            top: 5px;
+                                            color: cyan;"></i>
+                                           
+                                            <a href="mailto:hello@techex.com" style="color: white; margin-top: 42px;">support@fusionjon.com</a>
                                         </div>
                                     </li>
                                 </ul>
-                            </div>
-                        </div>
-
-                        <div class="col-lg-3 col-sm-6">
-                            <div class="footer-widget">
-                                <h3>Newsletter</h3>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum finibus molestie molestie. Phasellus ac rutrum massa, et volutpat nisl. Fusce ultrices suscipit nisl.</p>
+                                
                                 <div class="newsletter-area">
-                                    <form class="newsletter-form" data-toggle="validator" method="POST">
+                                    <form class="newsletter-form" data-toggle="validator" method="POST" style="margin-top: 20px">
                                         <input type="email" class="form-control" placeholder="Enter Your Email" name="EMAIL" required autocomplete="off">
                                         <button class="subscribe-btn" type="submit">
                                             <i class='bx bx-paper-plane'></i>
@@ -681,8 +574,8 @@
                 <div class="copy-right-area">
                     <div class="copy-right-text">
                         <p>
-                            Copyright © <script>document.write(new Date().getFullYear())</script> Techex. All Rights Reserved by 
-                            <a href="https://hibootstrap.com/" target="_blank">HiBootstrap</a> 
+                            Copyright © <script>document.write(new Date().getFullYear())</script>. All Rights Reserved by 
+                            <a href="{{route('home')}}" target="_blank">FJ Tech</a> 
                         </p>
                     </div>
                 </div>
