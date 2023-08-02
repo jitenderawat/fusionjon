@@ -538,37 +538,37 @@
                                     </li> 
                                     <li>
                                         <a href="{{route('servicedatailstwo')}}" target="_blank" style="    position: relative;
-                                        left: 7px;">
+                                        left: -7px;">
                                             <i class='bx bx-chevron-right'></i>
-                                            Business Solution 
+                                            Web Services 
                                         </a>
                                     </li> 
                                     <li>
                                         <a href="{{route('servicedatailsthree')}}" target="_blank" style="    position: relative;
-                                        left: 0px;">
+                                        left: -8px;">
                                             <i class='bx bx-chevron-right'></i>
-                                            Digital Services  
+                                           App Services  
                                         </a>
                                     </li> 
                                     <li>
                                         <a href="{{route('servicedatailsfour')}}" target="_blank" style="    position: relative;
-                                        left: 3px;">
+                                        left: -1px;">
                                             <i class='bx bx-chevron-right'></i>
-                                            Business Reform   
+                                            Digital Services   
                                         </a>
                                     </li> 
                                     <li>
                                         <a href="{{route('servicedatailsfive')}}" target="_blank" style="    position: relative;
                                         left: 7px;">
                                             <i class='bx bx-chevron-right'></i>
-                                            Web Development      
+                                            Software Services      
                                         </a>
                                     </li> 
                                     <li>
                                         <a href="{{route('servicedatailssix')}}" target="_blank" style="    position: relative;
-                                        left: 4px;">
+                                        left: -4px;">
                                             <i class='bx bx-chevron-right'></i>
-                                            Cloud Computing      
+                                            Smart Devices    
                                         </a>
                                     </li> 
                                    

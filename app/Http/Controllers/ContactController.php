@@ -19,7 +19,7 @@ class ContactController extends Controller
         {
 
           
-         $fileName = $request->validate([
+         $formData = $request->validate([
                 'name' => 'required',
                 'email' => 'nullable',
                 'phone_number' => 'nullable',
@@ -29,9 +29,9 @@ class ContactController extends Controller
                 'name.required' => 'Name is required.', 
                 // Custom error message for the "name" field
             ]);
-     
+    
             try {
-                Mail::to('mail@fusionjon.com')->send(new ContactMe($fileName));
+                Mail::to('jeetupahadi54@gmail.com')->send(new ContactMe($formData));
                 Session::flash('success', 'Message Sent Successfully!');
             } catch (\Exception $e) {
                 // Handle the exception, log the error, display a user-friendly message, etc.

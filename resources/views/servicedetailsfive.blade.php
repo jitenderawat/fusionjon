@@ -293,7 +293,7 @@
                                <img src="assets/images/services/service-details.jpg" alt="Images">
                             </div>
                             <div class="service-article-content">
-                                <h2>Cloud Computing</h2>
+                                <h2>Software Development</h2>
                                 <p>
                                     Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. cu 
                                     sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies ne, 
@@ -412,12 +412,12 @@
                             <div class="side-bar-widget" style="margin-top: 180px">
                                 <h3 class="title">Tag Cloud</h3>
                                 <ul class="side-bar-widget-tag">
-                                    <li><a href="" target="_blank">Android</a></li>
-                                    <li><a href="" target="_blank">Creative</a></li>
-                                    <li><a href="" target="_blank">App</a></li>
-                                    <li><a href="" target="_blank">IOS</a></li>
-                                    <li><a href="" target="_blank">Business</a></li>
-                                    <li><a href="" target="_blank">Consulting</a></li>
+                                    <li><a href="{{route('servicedetails')}}" target="_blank">Android</a></li>
+                                    <li><a href="{{route('servicedatailstwo')}}" target="_blank">Creative</a></li>
+                                    <li><a href="{{route('servicedatailsthree')}}" target="_blank">App</a></li>
+                                    <li><a href="{{route('servicedatailsfour')}}" target="_blank">IOS</a></li>
+                                    <li><a href="{{route('servicedatailsfive')}}" target="_blank">Business</a></li>
+                                    <li><a href="{{route('servicedatailssix')}}" target="_blank">Consulting</a></li>
                                 </ul>
                             </div>
 
@@ -480,37 +480,37 @@
                                     </li> 
                                     <li>
                                         <a href="{{route('servicedatailstwo')}}" target="_blank" style="    position: relative;
-                                        left: 7px;">
+                                        left: -7px;">
                                             <i class='bx bx-chevron-right'></i>
-                                            Business Solution 
+                                            Web Services 
                                         </a>
                                     </li> 
                                     <li>
                                         <a href="{{route('servicedatailsthree')}}" target="_blank" style="    position: relative;
-                                        left: 0px;">
+                                        left: -8px;">
                                             <i class='bx bx-chevron-right'></i>
-                                            Digital Services  
+                                           App Services  
                                         </a>
                                     </li> 
                                     <li>
                                         <a href="{{route('servicedatailsfour')}}" target="_blank" style="    position: relative;
-                                        left: 3px;">
+                                        left: -1px;">
                                             <i class='bx bx-chevron-right'></i>
-                                            Business Reform   
+                                            Digital Services   
                                         </a>
                                     </li> 
                                     <li>
                                         <a href="{{route('servicedatailsfive')}}" target="_blank" style="    position: relative;
                                         left: 7px;">
                                             <i class='bx bx-chevron-right'></i>
-                                            Web Development      
+                                            Software Services      
                                         </a>
                                     </li> 
                                     <li>
                                         <a href="{{route('servicedatailssix')}}" target="_blank" style="    position: relative;
-                                        left: 4px;">
+                                        left: -4px;">
                                             <i class='bx bx-chevron-right'></i>
-                                            Cloud Computing      
+                                            Smart Devices    
                                         </a>
                                     </li> 
                                    
