@@ -641,8 +641,8 @@
                                     </li>
                                 </ul>
                                 
-                                <div class="newsletter-area">
-                                    <form class="newsletter-form" data-toggle="validator" method="POST" style="margin-top: 20px">
+                                <div class="newsletter-area" style="margin-top: 52px">
+                                    <form action="" class="newsletter-form" data-toggle="validator" method="POST" style="margin-top: 20px">
                                         <input type="email" class="form-control" placeholder="Enter Your Email" name="EMAIL" required autocomplete="off">
                                         <button class="subscribe-btn" type="submit">
                                             <i class='bx bx-paper-plane'></i>

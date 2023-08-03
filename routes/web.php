@@ -18,11 +18,14 @@ use App\Http\Controllers\BlogController;
 use App\Http\Controllers\BlogdetailController;
 use App\Http\Controllers\BlogdetailsController;
 use App\Http\Controllers\BlogdetailsnewController;
+use App\Http\Controllers\MailController;
 use App\Http\Controllers\ServicedetailstwoController;
 use App\Http\Controllers\ServicedetailsthreeController;
 use App\Http\Controllers\ServicedetailsfourController;
 use App\Http\Controllers\ServicedetailsfiveController;
 use App\Http\Controllers\ServicedetailssixController;
+use App\Http\Controllers\BlogMailController;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -45,7 +48,7 @@ Route::get('/terms-condition', [TermController::class, 'index'])->name('terms');
 Route::get('/privacy', [PrivacyController::class, 'index'])->name('privacy');
 
 Route::get('/contact', [ContactController::class, 'index'])->name('contact');
-Route::post('/contact', [ContactController::class, 'store_msg']);
+Route::post('/send-mail', [MailController::class, 'store_msg'])->name('send');
 
 Route::get('/about', [AboutController::class, 'index'])->name('about');
 Route::get('/team', [TeamController::class, 'index'])->name('team');
@@ -70,3 +73,5 @@ Route::get('/blog', [BlogController::class, 'index'])->name('blog');
 Route::get('/blog-details', [BlogdetailController::class, 'index'])->name('blogdetails');
 Route::get('/blogs', [BlogdetailsController::class, 'index'])->name('blogdetails2');
 Route::get('/blog-three', [BlogdetailsnewController::class, 'index'])->name('blogdetails3');
+
+Route::post('/send-comment', [BlogMailController::class, 'store_comment'])->name('comments');

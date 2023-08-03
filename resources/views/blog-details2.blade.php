@@ -5,6 +5,8 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js" integrity="sha512-AA1Bzp5Q0K1KanKKmvN/4d3IRKVlv9PYgwFPvm32nPO6QS8yH1HO7LbgB1pgiOxPtfeg5zEn2ba64MUcqJx6CA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
        <!-- Bootstrap RTL CSS --> 
         <link rel="stylesheet" href="assets/css/bootstrap.rtl.min.css">
         <!-- Animate Min CSS -->
@@ -92,6 +94,12 @@
             </div>
         </header>
         <!-- Top Header End -->
+
+        @if (Session::has('success'))
+        <div class="alert alert-success" id="success-message"  style="text-align: left">
+            {{ Session::get('success') }}
+        </div>
+    @endif
 
         <!-- Start Navbar Area -->
         <div class="navbar-area">
@@ -362,33 +370,32 @@
                             <div class="comments-form">
                                 <h3 class="title">Leave A Comment</h3>
                                 <div class="contact-form">
-                                    <form id="contactForm">
+                                    <form action="{{route('comments')}}" id="contactForm" method="post">
+                                        @csrf
                                         <div class="row">
                                             <div class="col-lg-6 col-sm-6">
                                                 <div class="form-group">
                                                     <label>Your Name <span>*</span></label>
-                                                    <input type="text" name="name" id="name" class="form-control" required data-error="Please enter your name" placeholder="Your Name">
+                                                    <input type="text" name="name" id="name" class="form-control" required data-error="Please Enter Your Name" placeholder="Name" style="text-align: left">
+                                                    <div class="help-block with-errors"></div>
                                                 </div>
                                             </div>
             
                                             <div class="col-lg-6 col-sm-6">
                                                 <div class="form-group">
                                                     <label>Your Email <span>*</span></label>
-                                                    <input type="email" name="email" id="email" class="form-control" required data-error="Please enter your email" placeholder="Your Email">
+                                                    <input type="email" name="email" id="email" class="form-control" required data-error="Please Enter Your Email" placeholder="Email" style="text-align: left">
+                                                    <div class="help-block with-errors"></div>
                                                 </div>
                                             </div>
     
-                                            <div class="col-lg-12 col-sm-12">
-                                                <div class="form-group">
-                                                    <label>Your website <span>*</span></label>
-                                                    <input type="text" name="websit" class="form-control" required data-error="Your website" placeholder="Your website">
-                                                </div>
-                                            </div>
-            
+                                          
+
                                             <div class="col-lg-12 col-md-12">
                                                 <div class="form-group">
-                                                    <label>Your website <span>*</span></label>
-                                                    <textarea name="message" class="form-control" id="message" cols="30" rows="8" required data-error="Write Your Review" placeholder="Your Review"></textarea>
+                                                    <label>Your Comment <span>*</span></label>
+                                                    <textarea name="comment" class="form-control" id="message" cols="30" rows="8" required data-error="Please Write your Comment" placeholder="Your Comment" style="text-align: left"></textarea>
+                                                    <div class="help-block with-errors"></div>
                                                 </div>
                                             </div>
     
@@ -408,6 +415,16 @@
                                             </div>
                                         </div>
                                     </form>
+                                                          
+        @if (Session::has('success'))
+        <script>
+            swal("Thank you !", "{{Session::get('message')}}",'success',{
+                button:true,
+                button: "OK",
+               
+            })
+        </script>
+        @endif
                                 </div>
                             </div>
                         </div>
@@ -648,7 +665,7 @@
                                     </li>
                                 </ul>
                                 
-                                <div class="newsletter-area">
+                                <div class="newsletter-area" style="margin-top: 52px">
                                     <form class="newsletter-form" data-toggle="validator" method="POST" style="margin-top: 20px">
                                         <input type="email" class="form-control" placeholder="Enter Your Email" name="EMAIL" required autocomplete="off">
                                         <button class="subscribe-btn" type="submit">
@@ -682,6 +699,19 @@
             </label>
         </div>
         <!-- Color Switch Button End -->
+
+        <script>
+            $(document).ready(function () {
+                // If the success message exists, hide it after 3 seconds
+                if ($("#success-message").length) {
+                    setTimeout(function () {
+                        $("#success-message").fadeOut('slow', function () {
+                            $(this).remove();
+                        });
+                    }, 3000);
+                }
+            });
+        </script>
 
        <!-- Jquery Min JS -->
        <script src="assets/js/jquery.min.js"></script>

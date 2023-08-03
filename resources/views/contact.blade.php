@@ -5,7 +5,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js" integrity="sha512-AA1Bzp5Q0K1KanKKmvN/4d3IRKVlv9PYgwFPvm32nPO6QS8yH1HO7LbgB1pgiOxPtfeg5zEn2ba64MUcqJx6CA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
         <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
        <!-- Bootstrap RTL CSS --> 
         <link rel="stylesheet" href="assets/css/bootstrap.rtl.min.css">
@@ -95,12 +95,6 @@
             </div>
         </header>
         <!-- Top Header End -->
-
-        @if (Session::has('success'))
-        <div class="alert alert-success" id="success-message"  style="text-align: left">
-            {{ Session::get('success') }}
-        </div>
-    @endif
 
         <!-- Start Navbar Area -->
         <div class="navbar-area">
@@ -334,7 +328,7 @@
                     <div class="col-lg-8">
                         <div class="contact-form">
                            
-                            <form action="{{route('contact')}}"  method="POST" id="contactForm">
+                            <form action="{{route('send')}}"  method="POST" id="contactForm">
                                 @csrf
                                 <div class="row">
                                     <div class="col-lg-6">
@@ -398,6 +392,17 @@
 
                                 </div>
                             </form>
+                            
+        @if (Session::has('success'))
+    <script>
+        swal("Thank you !", "{{Session::get('message')}}",'success',{
+            button:true,
+            button: "OK",
+           
+        })
+    </script>
+    @endif
+
                         </div>
                     </div>
                 </div>
@@ -531,7 +536,7 @@
                                     </li>
                                 </ul>
                                 
-                                <div class="newsletter-area">
+                                <div class="newsletter-area" style="margin-top: 52px">
                                     <form class="newsletter-form" data-toggle="validator" method="POST" style="margin-top: 20px">
                                         <input type="email" class="form-control" placeholder="Enter Your Email" name="EMAIL" required autocomplete="off">
                                         <button class="subscribe-btn" type="submit">
