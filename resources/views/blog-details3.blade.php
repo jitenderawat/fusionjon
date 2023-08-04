@@ -95,6 +95,7 @@
         </header>
         <!-- Top Header End -->
 
+        
 
         <!-- Start Navbar Area -->
         <div class="navbar-area">
@@ -282,148 +283,151 @@
                     </ul>
                 </div>
             </div>
-            <div class="inner-shape">
-                <img src="assets/images/shape/inner-shape.png" alt="Images">
-            </div>
-        </div>
-        <!-- Inner Banner End -->
+       
+<div class="inner-shape">
+    <img src="assets/images/shape/inner-shape.png" alt="Images">
+</div>
+</div>
+<!-- Inner Banner End -->
 
-        <!-- Blog Details Area -->
-        <div class="blog-details-area pt-100 pb-70">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8">
-                        <div class="blog-article">
-                            <div class="blog-article-img">
-                                <img src="assets/images/blog/blog3.jpg" alt="Images">
-                                <div class="blog-article-tag">
-                                    <h3>01</h3>
-                                    <span>June</span>
+<!-- Blog Details Area -->
+<div class="blog-details-area pt-100 pb-70">
+<div class="container">
+    <div class="row">
+        <div class="col-lg-8">
+            <div class="blog-article">
+                <div class="blog-article-img">
+                    <img src="assets/images/blog/blog3.jpg" alt="Images">
+                    <div class="blog-article-tag">
+                        <h3>01</h3>
+                        <span>June</span>
+                    </div>
+                </div>
+
+                <div class="blog-article-title">
+                    <ul>
+                        <li><i class='bx bxs-user'></i> By Admin</li>
+                        <li><i class='bx bx-show-alt'></i>322 View</li>
+                        <li><i class='bx bxs-conversation'></i>2 Comments</li>
+                    </ul>
+                    <h2>How to improve your website SEO?</h2>
+                </div>
+
+                <div class="article-content">
+                    <p>
+                        <b>I. Keyword Research</b>
+                    </p>
+
+                      <p>- Importance of choosing the right keywords </p>
+
+                      <p>- Tools for keyword research</p>
+
+                      <p>- Strategies for identifying high-value keywords</p>
+
+
+
+                    <p>
+                       <b>II. On-Page SEO Optimisation</b>
+                    </p>
+                    <p>- Importance of optimising meta tags and title tags</p>
+                     <p>- Strategies for creating user-friendly URLs</p>
+                     <p>- Techniques for optimising website content</p>
+
+                     <p><b>III. Off-Page SEO Optimisation</b></p>
+                     <p>- Importance of building backlinks</p>
+                     <p>- Strategies for acquiring high-quality backlinks</p>
+                     <p>- Techniques for guest blogging and influencer outreach</p>
+
+                     <p><b>IV. Technical SEO Optimisation</b></p>
+                     <p>- Importance of website speed and mobile optimisation</p>
+                     <p>- Strategies for improving website loading time</p>
+                     <p>- Techniques for optimising website structure and navigation</p>
+
+                     <p><b>V. Content Creation and Optimisation</b></p>
+                     <p>- Importance of high-quality and relevant content</p>
+                     <p>- Strategies for creating engaging and shareable content</p>
+                     <p>- Techniques for optimising content with keywords and headings</p>
+
+                     <p><b>VI. Local SEO Optimisation</b></p>
+                     <p>- Importance of local SEO for businesses</p>
+                     <p>- Strategies for optimising website for local</p>
+
+
+                    <blockquote class="blockquote">
+                        <p>
+                            “A good SEO professional not only understands the searcher but the competitive landscape as well.”
+                        </p>
+                        <span>- Ryan Jones, SEO Group Director at Razorfish</span>
+                        <i class='bx bxs-quote-alt-left'></i>
+                    </blockquote>
+
+
+                </div>
+
+
+
+                <div class="comments-form">
+                    <h3 class="title">Leave A Comment</h3>
+                    <div class="contact-form">
+                        <form action="{{route('comments')}}" id="contactForm" method="post">
+                            @csrf
+                            <div class="row">
+                                <div class="col-lg-6 col-sm-6">
+                                    <div class="form-group">
+                                        <label>Your Name <span>*</span></label>
+                                        <input type="text" name="name" id="name" class="form-control" required data-error="Please Enter Your Name" placeholder="Name" style="text-align: left">
+                                        <div class="help-block with-errors"></div>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-6 col-sm-6">
+                                    <div class="form-group">
+                                        <label>Your Email <span>*</span></label>
+                                        <input type="email" name="email" id="email" class="form-control" required data-error="Please Enter Your Email" placeholder="Email" style="text-align: left">
+                                        <div class="help-block with-errors"></div>
+                                    </div>
+                                </div>
+
+
+
+                                <div class="col-lg-12 col-md-12">
+                                    <div class="form-group">
+                                        <label>Your Comment <span>*</span></label>
+                                        <textarea name="comment" class="form-control" id="message" cols="30" rows="8" required data-error="Please Write your Comment" placeholder="Your Comment" style="text-align: left"></textarea>
+                                        <div class="help-block with-errors"></div>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-12 col-md-12">
+                                    <div class="form-group checkbox-option">
+                                        <input type="checkbox" id="chb2">
+                                        <p>
+                                            Save my name and email in this browser for the next time I comment.
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-12 col-md-12">
+                                    <button type="submit" class="default-btn btn-bg-two border-radius-50">
+                                        Post A Comment
+                                    </button>
                                 </div>
                             </div>
+                        </form>
 
-                            <div class="blog-article-title">
-                                <ul>
-                                    <li><i class='bx bxs-user'></i> By Admin</li>
-                                    <li><i class='bx bx-show-alt'></i>322 View</li>
-                                    <li><i class='bx bxs-conversation'></i>2 Comments</li>
-                                </ul>
-                                <h2>How to improve your website SEO?</h2>
-                            </div>
+@if (Session::has('success'))
+<script>
+swal("Thank you !", "{{Session::get('message')}}",'success',{
+    button:true,
+    button: "OK",
 
-                            <div class="article-content">
-                                <p>
-                                    <b>I. Keyword Research</b> 
-                                </p>
+})
+</script>
+@endif
 
-                                  <p>- Importance of choosing the right keywords </p>
-                                    
-                                  <p>- Tools for keyword research</p>
-                                    
-                                  <p>- Strategies for identifying high-value keywords</p>
-                                    
-                               
-
-                                <p>
-                                   <b>II. On-Page SEO Optimisation</b>
-                                </p>
-                                <p>- Importance of optimising meta tags and title tags</p>
-                                 <p>- Strategies for creating user-friendly URLs</p>
-                                 <p>- Techniques for optimising website content</p>
-
-                                 <p><b>III. Off-Page SEO Optimisation</b></p>
-                                 <p>- Importance of building backlinks</p>
-                                 <p>- Strategies for acquiring high-quality backlinks</p>
-                                 <p>- Techniques for guest blogging and influencer outreach</p>
-
-                                 <p><b>IV. Technical SEO Optimisation</b></p>
-                                 <p>- Importance of website speed and mobile optimisation</p>
-                                 <p>- Strategies for improving website loading time</p>
-                                 <p>- Techniques for optimising website structure and navigation</p>
-
-                                 <p><b>V. Content Creation and Optimisation</b></p>
-                                 <p>- Importance of high-quality and relevant content</p>
-                                 <p>- Strategies for creating engaging and shareable content</p>
-                                 <p>- Techniques for optimising content with keywords and headings</p>
-            
-                                 <p><b>VI. Local SEO Optimisation</b></p>
-                                 <p>- Importance of local SEO for businesses</p>
-                                 <p>- Strategies for optimising website for local</p>
-                              
-
-                                <blockquote class="blockquote"> 
-                                    <p>
-                                        “A good SEO professional not only understands the searcher but the competitive landscape as well.” 
-                                    </p>
-                                    <span>- Ryan Jones, SEO Group Director at Razorfish</span>
-                                    <i class='bx bxs-quote-alt-left'></i>
-                                </blockquote>
-
-                              
-                            </div>
-
-            
-
-                            <div class="comments-form">
-                                <h3 class="title">Leave A Comment</h3>
-                                <div class="contact-form">
-                                    <form action="{{route('comments')}}" id="contactForm" method="post">
-                                        @csrf
-                                        <div class="row">
-                                            <div class="col-lg-6 col-sm-6">
-                                                <div class="form-group">
-                                                    <label>Your Name <span>*</span></label>
-                                                    <input type="text" name="name" id="name" class="form-control" required data-error="Please Enter Your Name" placeholder="Name" style="text-align: left">
-                                                    <div class="help-block with-errors"></div>
-                                                </div>
-                                            </div>
-            
-                                            <div class="col-lg-6 col-sm-6">
-                                                <div class="form-group">
-                                                    <label>Your Email <span>*</span></label>
-                                                    <input type="email" name="email" id="email" class="form-control" required data-error="Please Enter Your Email" placeholder="Email" style="text-align: left">
-                                                    <div class="help-block with-errors"></div>
-                                                </div>
-                                            </div>
-    
-                                          
-
-                                            <div class="col-lg-12 col-md-12">
-                                                <div class="form-group">
-                                                    <label>Your Comment <span>*</span></label>
-                                                    <textarea name="comment" class="form-control" id="message" cols="30" rows="8" required data-error="Please Write your Comment" placeholder="Your Comment" style="text-align: left"></textarea>
-                                                    <div class="help-block with-errors"></div>
-                                                </div>
-                                            </div>
-    
-                                            <div class="col-lg-12 col-md-12">
-                                                <div class="form-group checkbox-option">
-                                                    <input type="checkbox" id="chb2">
-                                                    <p>
-                                                        Save my name, email, and website in this browser for the next time I comment.
-                                                    </p>
-                                                </div>
-                                            </div>
-            
-                                            <div class="col-lg-12 col-md-12">
-                                                <button type="submit" class="default-btn btn-bg-two border-radius-50">
-                                                    Post A Comment
-                                                </button>
-                                            </div>
-                                        </div>
-                                    </form>
-                                                          
-        @if (Session::has('success'))
-        <script>
-            swal("Thank you !", "{{Session::get('message')}}",'success',{
-                button:true,
-                button: "OK",
-              
-            })
-        </script>
-        @endif
                                 </div>
                             </div>
+                        </div>
                     </div>
 
                     <div class="col-lg-4">
@@ -437,7 +441,7 @@
                                 </form>
                             </div>
 
-                            <div class="side-bar-widget"  style="margin-top: 127px">
+                            <div class="side-bar-widget" style="margin-top: 127px">
                                 <h3 class="title">Blog Categories</h3>
                                 <div class="side-bar-categories">
                                     <ul>
@@ -531,11 +535,11 @@
                                             <img src="assets/images/blog/facebook.png" alt="image">
                                         </a>
                                     </li>
-                                   
+                                  
                                 </ul>
                             </div>
 
-
+                           
                         </div>
                     </div>
                 </div>
@@ -543,7 +547,7 @@
         </div>
         <!-- Blog Details Area End -->
 
-        <!-- Footer Area -->
+        <!-- Footer Area  -->
         <footer class="footer-area footer-bg">
             <div class="container">
                 <div class="footer-top pt-100 pb-70">
@@ -613,7 +617,7 @@
                                    
                                 </ul>
                             </div>
-                        </div>>
+                        </div>
 
                       
 
@@ -661,15 +665,7 @@
                                     </li>
                                 </ul>
                                 
-                                <div class="newsletter-area" style="margin-top: 52px">
-                                    <form class="newsletter-form" data-toggle="validator" method="POST" style="margin-top: 20px">
-                                        <input type="email" class="form-control" placeholder="Enter Your Email" name="EMAIL" required autocomplete="off">
-                                        <button class="subscribe-btn" type="submit">
-                                            <i class='bx bx-paper-plane'></i>
-                                        </button>
-                                        <div id="validator-newsletter" class="form-result"></div>
-                                    </form>
-                                </div>
+                               
                             </div>
                         </div>
                     </div>

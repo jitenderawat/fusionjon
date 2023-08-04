@@ -95,11 +95,7 @@
         </header>
         <!-- Top Header End -->
 
-        @if (Session::has('success'))
-        <div class="alert alert-success" id="success-message"  style="text-align: left">
-            {{ Session::get('success') }}
-        </div>
-    @endif
+
 
         <!-- Start Navbar Area -->
         <div class="navbar-area">
@@ -403,7 +399,7 @@
                                                 <div class="form-group checkbox-option">
                                                     <input type="checkbox" id="chb2">
                                                     <p>
-                                                        Save my name, email, and website in this browser for the next time I comment.
+                                                        Save my name and email in this browser for the next time I comment.
                                                     </p>
                                                 </div>
                                             </div>
@@ -665,15 +661,7 @@
                                     </li>
                                 </ul>
                                 
-                                <div class="newsletter-area" style="margin-top: 52px">
-                                    <form class="newsletter-form" data-toggle="validator" method="POST" style="margin-top: 20px">
-                                        <input type="email" class="form-control" placeholder="Enter Your Email" name="EMAIL" required autocomplete="off">
-                                        <button class="subscribe-btn" type="submit">
-                                            <i class='bx bx-paper-plane'></i>
-                                        </button>
-                                        <div id="validator-newsletter" class="form-result"></div>
-                                    </form>
-                                </div>
+                               
                             </div>
                         </div>
                     </div>

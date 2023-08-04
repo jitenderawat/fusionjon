@@ -12,13 +12,13 @@ use Illuminate\Queue\SerializesModels;
 class TeleMail extends Mailable
 {
     use Queueable, SerializesModels;
-           public $contactData;
+           public $teleData;
     /**
      * Create a new message instance.
      */
-    public function __construct($contactData)
+    public function __construct($teleData)
     {
-        $this->contactData = $contactData;
+        $this->teleData = $teleData;
     }
 
     /**
@@ -27,7 +27,7 @@ class TeleMail extends Mailable
     public function envelope(): Envelope
     {
         return new Envelope(
-            subject: 'Tele Mail',
+            subject: 'Website Enquiry',
         );
     }
 
@@ -37,7 +37,7 @@ class TeleMail extends Mailable
     public function content(): Content
     {
         return new Content(
-            view: 'email.teleMail',
+            view: 'emails.teleMail',
         );
     }
 

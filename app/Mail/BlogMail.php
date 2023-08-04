@@ -27,7 +27,7 @@ class BlogMail extends Mailable
     public function envelope(): Envelope
     {
         return new Envelope(
-            subject: 'Blog Mail',
+            subject: 'Website Enquiry',
         );
     }
 

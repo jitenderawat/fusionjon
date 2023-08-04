@@ -7,19 +7,20 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Mail;
 use App\Mail\TeleMail;
 
+
 class EmailController extends Controller
 {
-    public function store_msg(Request $request){
-        $contactData = $request->validate([
+    public function store_email(Request $request){
+        $teleData = $request->validate([
            
-            'email' => 'nullable',
+            'email' => 'required',
           
 
      ]);
 
-     Mail::to('support@fusionjon.com')->send(new TeleMMail($contactData));
+     Mail::to('support@fusionjon.com')->send(new TeleMail($teleData));
          
-     $request->session()->flash('success', 'Thank You !');
+     $request->session()->flash('success', 'Your Email Send Successfully !');
 
      // Redirect back to the previous page or a specific route
      return redirect()->back();

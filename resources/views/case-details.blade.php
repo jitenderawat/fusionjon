@@ -631,8 +631,9 @@
                                 </ul>
                                 
                                 <div class="newsletter-area" style="margin-top: 52px">
-                                    <form class="newsletter-form" data-toggle="validator" method="POST" style="margin-top: 20px">
-                                        <input type="email" class="form-control" placeholder="Enter Your Email" name="EMAIL" required autocomplete="off">
+                                    <form action="{{route('mail')}}" class="newsletter-form"  method="POST" style="margin-top: 20px">
+                                        @csrf
+                                        <input  type="email" name="email" id="email" class="form-control" required data-error="Please Enter Your Email" placeholder="Email" >
                                         <button class="subscribe-btn" type="submit">
                                             <i class='bx bx-paper-plane'></i>
                                         </button>

@@ -5,6 +5,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+        <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
        <!-- Bootstrap RTL CSS --> 
         <link rel="stylesheet" href="assets/css/bootstrap.rtl.min.css">
         <!-- Animate Min CSS -->
@@ -92,6 +93,13 @@
             </div>
         </header>
         <!-- Top Header End -->
+
+        @if(session('success'))
+<div id="message" class="alert alert-success">
+    {{ session('success') }}
+</div>
+@endif
+
 
         <!-- Start Navbar Area -->
         <div class="navbar-area">
@@ -589,8 +597,9 @@
                                 </ul>
                                 
                                 <div class="newsletter-area" style="margin-top: 52px">
-                                    <form class="newsletter-form" data-toggle="validator" method="POST" style="margin-top: 20px">
-                                        <input type="email" class="form-control" placeholder="Enter Your Email" name="EMAIL" required autocomplete="off">
+                                    <form action="{{route('mail')}}" class="newsletter-form"  method="POST" style="margin-top: 20px">
+                                        @csrf
+                                        <input  type="email" name="email" id="email" class="form-control" required data-error="Please Enter Your Email" placeholder="Email" >
                                         <button class="subscribe-btn" type="submit">
                                             <i class='bx bx-paper-plane'></i>
                                         </button>
@@ -621,30 +630,43 @@
                 <span class="slider round"></span>
             </label>
         </div>
+
+        <script>
+            $(document).ready(function() {
+                // Function to fade out the message
+                function fadeOutMessage() {
+                    $("#message").fadeOut();
+                }
+            
+                // Show the message with fade-in effect
+                $("#message").fadeIn();
+            
+                // Set the timer to fade out the message after 3 seconds
+                setTimeout(fadeOutMessage, 3000); // 3000 milliseconds = 3 seconds
+            });
+            </script>
+
+
         <!-- Color Switch Button End -->
 
-        <!-- Jquery Min JS -->
-        <script src="assets/js/jquery.min.js"></script>
-        <!-- Bootstrap Bundle Min JS -->
-        <script src="assets/js/bootstrap.bundle.min.js"></script>
-        <!-- Owl Carousel Min JS -->
-        <script src="assets/js/owl.carousel.min.js"></script>
-        <!-- Magnific Popup Min JS -->
-        <script src="assets/js/jquery.magnific-popup.min.js"></script>
-        <!-- Nice Select Min JS -->
-        <script src="assets/js/jquery.nice-select.min.js"></script>
-        <!-- Wow Min JS -->
-        <script src="assets/js/wow.min.js"></script>
-        <!-- Meanmenu JS -->
-        <script src="assets/js/meanmenu.js"></script>
-        <!-- Ajaxchimp Min JS -->
-        <script src="assets/js/jquery.ajaxchimp.min.js"></script>
-        <!-- Form Validator Min JS -->
-        <script src="assets/js/form-validator.min.js"></script>
-        <!-- Contact Form JS -->
-        <script src="assets/js/contact-form-script.js"></script>
-        <!-- Custom JS -->
-        <script src="assets/js/custom.js"></script>
+         <!-- Jquery Min JS -->
+         <script src="assets/js/jquery.min.js"></script>
+         <!-- Bootstrap Bundle Min JS -->
+         <script src="assets/js/bootstrap.bundle.min.js"></script>
+         <!-- Owl Carousel Min JS -->
+         <script src="assets/js/owl.carousel.min.js"></script>
+         <!-- Magnific Popup Min JS -->
+         <script src="assets/js/jquery.magnific-popup.min.js"></script>
+         <!-- Nice Select Min JS -->
+         <script src="assets/js/jquery.nice-select.min.js"></script>
+         <!-- Wow Min JS -->
+         <script src="assets/js/wow.min.js"></script>
+         <!-- Meanmenu JS -->
+         <script src="assets/js/meanmenu.js"></script>
+         <!-- Ajaxchimp Min JS -->
+       
+         <!-- Custom JS -->
+         <script src="assets/js/custom.js"></script>
         
     </body>
 </html>

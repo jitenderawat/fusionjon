@@ -25,6 +25,7 @@ use App\Http\Controllers\ServicedetailsfourController;
 use App\Http\Controllers\ServicedetailsfiveController;
 use App\Http\Controllers\ServicedetailssixController;
 use App\Http\Controllers\BlogMailController;
+use App\Http\Controllers\EmailController;
 
 /*
 |--------------------------------------------------------------------------
@@ -75,3 +76,4 @@ Route::get('/blogs', [BlogdetailsController::class, 'index'])->name('blogdetails
 Route::get('/blog-three', [BlogdetailsnewController::class, 'index'])->name('blogdetails3');
 
 Route::post('/send-comment', [BlogMailController::class, 'store_comment'])->name('comments');
+Route::post('/send-email', [EmailController::class, 'store_email'])->name('mail');
